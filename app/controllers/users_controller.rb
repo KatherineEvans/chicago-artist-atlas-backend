@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+  
+  def index
+    users = User.all
+    render json: users.as_json
+  end
+
   def create
     user = User.new(
       first_name: params[:first_name],
@@ -15,4 +21,5 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
 end
