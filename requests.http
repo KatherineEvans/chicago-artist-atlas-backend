@@ -1,4 +1,14 @@
 ### User Create
+POST http://localhost:3000/users
+Content-Type: application/json
 
+{
+  "first_name": "ATLAS",
+  "last_name": "User",
+  "email": "info@chiartistatlas.com",
+  "password": "ILoveChicagoTheater",
+  "password_confirmation": "ILoveChicagoTheater",
+  "pronouns": "they/them"
+}
 
 ### Session create

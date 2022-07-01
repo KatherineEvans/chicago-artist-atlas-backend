@@ -6,7 +6,7 @@ class UsersController < ApplicationController
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation],
-      pronouns: params[:pronouns]
+      pronouns: params[:pronouns],
       last_logged_in_at: DateTime.now
     )
     if user.save
