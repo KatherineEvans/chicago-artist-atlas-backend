@@ -15,3 +15,13 @@ Content-Type: application/json
 }
 
 ### Session create
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "katherine@test.com",
+  "password": "password"
+}
+
+### Theater Index
+GET http://localhost:3000/theaters
