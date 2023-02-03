@@ -81,6 +81,8 @@ test:
 #
 production:
   <<: *default
-  database: chicago_artist_atlas_backend_production
-  username: chicago_artist_atlas_backend
-  password: <%= ENV["CHICAGO_ARTIST_ATLAS_BACKEND_DATABASE_PASSWORD"] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  host: <%= ENV['DATABASE_ENDPOINT'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
