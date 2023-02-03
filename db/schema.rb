@@ -39,6 +39,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_21_171918) do
     t.string "season_type"
     t.string "union_status"
     t.string "image_url"
+    t.string "mission"
+    t.string "phone"
+    t.boolean "venue", default: false
+    t.boolean "childrens", default: false
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -13,6 +13,10 @@ class CreateTheaters < ActiveRecord::Migration[7.0]
       t.string :season_type
       t.string :union_status
       t.string :image_url
+      t.string :mission
+      t.string :phone
+      t.boolean :venue, :default => false
+      t.boolean :childrens, :default => false
       t.boolean :active, :default => true
 
       t.timestamps
