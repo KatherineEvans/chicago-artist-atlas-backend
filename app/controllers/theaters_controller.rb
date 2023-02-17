@@ -16,6 +16,6 @@ class TheatersController < ApplicationController
 
     theaters = theaters.order("name ASC").limit(page_size.to_i).offset(page_starts_at.to_i)
 
-    render json: theaters.as_json
+    render json: theaters
   end
 end
