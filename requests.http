@@ -25,3 +25,6 @@ Content-Type: application/json
 
 ### Theater Index
 GET http://localhost:3000/theaters?page_size=5&page_number=2&search=Aguijon
+
+### Auditions
+GET http://localhost:3000/auditions

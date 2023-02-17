@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   get "/users" => "users#index"
   get "/theaters" => "theaters#index"
+  get "/auditions" => "auditions#index"
 end

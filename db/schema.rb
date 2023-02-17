@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_21_171918) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_17_142316) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -22,6 +22,33 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_21_171918) do
     t.string "state"
     t.string "country"
     t.string "postal_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "auditions", force: :cascade do |t|
+    t.string "date"
+    t.string "name_of_company"
+    t.string "name_of_show"
+    t.string "written_by"
+    t.string "director"
+    t.string "in_the_room"
+    t.string "location"
+    t.string "union_status"
+    t.string "pay_scale"
+    t.text "materials_to_prepare"
+    t.text "cast_breakdown"
+    t.text "character"
+    t.text "character_details"
+    t.text "character_skills"
+    t.text "character_warnings"
+    t.datetime "rehearsal_startdate"
+    t.datetime "show_startdate"
+    t.datetime "show_enddate"
+    t.string "show_location"
+    t.string "show_warnings"
+    t.text "how_to_submit"
+    t.text "additional_notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
