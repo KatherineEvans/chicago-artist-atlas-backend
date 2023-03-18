@@ -12,10 +12,6 @@ class CreateAuditions < ActiveRecord::Migration[7.0]
       t.string :pay_scale
       t.text :materials_to_prepare
       t.text :cast_breakdown
-      t.text :character
-      t.text :character_details
-      t.text :character_skills
-      t.text :character_warnings
       t.datetime :rehearsal_startdate
       t.datetime :show_startdate
       t.datetime :show_enddate
