@@ -16,7 +16,8 @@ class CreateAuditions < ActiveRecord::Migration[7.0]
       t.datetime :show_startdate
       t.datetime :show_enddate
       t.string :show_location
-      t.string :show_warnings
+      t.string :show_warnings.
+      
       t.text :how_to_submit
       t.text :additional_notes
 
