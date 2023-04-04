@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_24_145322) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_29_162920) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -38,10 +38,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_145322) do
     t.string "pay_scale"
     t.text "materials_to_prepare"
     t.text "cast_breakdown"
-    t.text "character"
-    t.text "character_details"
-    t.text "character_skills"
-    t.text "character_warnings"
     t.datetime "rehearsal_startdate"
     t.datetime "show_startdate"
     t.datetime "show_enddate"
@@ -90,6 +86,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_145322) do
     t.string "contact_form"
     t.string "typical_rehearsal_time"
     t.string "typical_audition_time"
+    t.integer "owner_id"
   end
 
   create_table "users", force: :cascade do |t|
