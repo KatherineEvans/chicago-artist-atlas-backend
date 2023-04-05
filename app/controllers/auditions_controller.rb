@@ -16,7 +16,7 @@ class AuditionsController < ApplicationController
 
     # auditions = auditions.order("name ASC").limit(page_size.to_i).offset(page_starts_at.to_i)
 
-    render json: auditions.as_json
+    render json: auditions
   end
   
 end
