@@ -428,4 +428,4 @@
 # AGENCIES
 
 address = Address.create!(address1: "410 South Michigan Avenue", address2: "Suite 733", city: "Chicago", state: "IL", postal_code: "60605")
-wpt = Theater.create!(name: "Actors Talent Group", address_id: address.id, website: "www.actorstalentgroup.com", submission_guidelines: "http://www.actorstalentgroup.com/dark-submission-rules.html", union_status: "SAG/AFTRA")
+wpt = Agency.create!(name: "Actors Talent Group", address_id: address.id, website: "www.actorstalentgroup.com", submission_guidelines: "http://www.actorstalentgroup.com/dark-submission-rules.html", union_status: "SAG/AFTRA")
