@@ -14,6 +14,7 @@ Resource.create!({ document_name: "Alternative Canon", organization_name: "Alter
 
 Resource.create!({ document_name: "BIPOC Swap List", organization_name: "BIPOC Swap List ", pdf_url: "https://docs.google.com/spreadsheets/d/1hrNaae60biRBsRTgX3oGPuZ7qMliQrBNgPYdJO40c64/htmlview#", website_url: nil, type: "BIPOC", sub_type: nil, description: "A growing list of plays, musicals, and acting method readings by BIPOC playwrights, composers, and theatremakers to “swap” in place of material typically used from the American theatre canon; based on similar themes and/or adaptations. A resource for theatre educators.", logo: "logo.url", free_tier: true})
 
+
 Resource.create!({ document_name: nil, organization_name: "Black Playwrights Intiative", pdf_url: nil, website_url: "https://www.blackensembletheater.org/outreach/black-playwrights-intiative/", type: "BIPOC", sub_type: "Black", description: "The Black Playwrights Initiative (BPI) was created in 2005 by Jackie Taylor, Founder and Executive Director of the Black Ensemble Theater. In explaining why the BPI was formulated Ms. Taylor stated; “Chicago has a rich and fertile community of African American Playwrights. There was a need for an organization that focused specifically on these artists as it related to their unique cultural heritage. The BPI is a vehicle that brings us together as a community to share resources and nourish our skills. It is the purpose of the BPI to develop scripts for the Black Ensemble Theater. It is also the purpose of the BPI to increase local and national exposure for our membership.” The BPI also provides training, technological resources and advancement opportunities for Chicago’s African American Playwrights Community.", logo: "logo.url", free_tier: true})
 
 Resource.create!({ document_name: nil, organization_name: "African American Arts Alliance of Chicago", pdf_url: nil, website_url: "https://www.aaaachicago.org/", type: "BIPOC", sub_type: "Black", description: "The AAAA is a non-profit service organization dedicated to promoting the performing, visual, literary, technical and design art forms! For almost 30 years, the Alliance has worked to increase the interaction, communication and collaboration within the Black Arts community to promote the continuing development of organizations and individual artists. With support from our advocates, artists and member organizations, the Alliance will continue to nurture the positive images of our members.", logo: "logo.url", free_tier: true})
@@ -23,6 +24,7 @@ Resource.create!({ document_name: nil, organization_name: "Black Film Space", pd
 Resource.create!({ document_name: nil, organization_name: "Sisters in Cinema", pdf_url: nil, website_url: "http://www.sistersincinema.com/", type: "BIPOC", sub_type: "Black", description: "founded in 1997 as an online resource for and about African American women media makers. Today we are a Chicago based 501(c)3 non-profit with an inclusive mission to center and celebrate Black girls, women, and gender nonconforming media makers, providing programs designed to educate, raise visibility, and support and serve our communities.", logo: "logo.url", free_tier: true})
 
 Resource.create!({ document_name: nil, organization_name: "The African American Voice Database", pdf_url: nil, website_url: "https://www.aavadb.com/", type: "BIPOC", sub_type: "Black", description: "Established in 2019, the African-American Voice Actor Database is a platform to showcase talented, professional, and authentic African-American voice actors. It is our goal to facilitate connections between amazing talents and agents/voice-seekers. The AAVDB is funded entirely by donations.", logo: "logo.url", free_tier: true})
+
 
 Resource.create!({ document_name: nil, organization_name: "Asian Improv aRts Midwest", pdf_url: nil, website_url: "https://www.airmw.org/", type: "BIPOC", sub_type: "AAPI", description: "Asian Improv aRts Midwest’s mission is to build a vital, self-empowered Asian American Community in the Chicago area by advancing the understanding and profile of Asian American cultures through the traditional and contemporary cultural arts.", logo: "logo.url", free_tier: true})
 
@@ -34,13 +36,16 @@ Resource.create!({ document_name: nil, organization_name: "APIDA Arts Festival",
 
 Resource.create!({ document_name: nil, organization_name: "Bubble Tea - Neatworking for Asian American Actors in Chicago", pdf_url: nil, website_url: "https://www.facebook.com/groups/193828444090900", type: "BIPOC", sub_type: "AAPI", description: "Bubble Tea - Networking for Asian American Actors in Chicago Group is exactly that. A safe and positive place for Asian-American actors, models, and artists to help, grow, promote, and network with other Asian-American actors, models, and artists.", logo: "logo.url", free_tier: true})
 
+
 Resource.create!({ document_name: nil, organization_name: "American Indian Center", pdf_url: nil, website_url: "https://www.aicchicago.org/", type: "BIPOC", sub_type: "American Indian", description: "The mission of the American Indian Center of Chicago (AIC) is to promote fellowship among Indian people of all Tribes living in metropolitan Chicago and to create bonds of understanding and communication between Indians and non-Indians in this city; to advance the general welfare of American Indians into the metropolitan community life; to foster the economic advancement of Indian people; to sustain cultural, artistic, and avocational pursuits; and to perpetuate Indian cultural values.", logo: "logo.url", free_tier: true})
+
 
 Resource.create!({ document_name: nil, organization_name: "Inner City Muslim Action Network", pdf_url: nil, website_url: "https://www.imancentral.org/", type: "BIPOC", sub_type: "Muslim", description: "The Inner-City Muslim Action Network (IMAN) is a community organization that fosters health, wellness and healing in the inner-city by organizing for social change, cultivating the arts, and operating a holistic health center.", logo: "logo.url", free_tier: true})
 
 Resource.create!({ document_name: nil, organization_name: "JCC Chicago Jewish Film Festival", pdf_url: nil, website_url: "https://www.jccfilmfest.jccchicago.org/", type: "BIPOC", sub_type: "Jewish", description: "The JCC Chicago Jewish Film Festival mission is to showcase culturally-diverse, Jewishly-inspired films that will entertain, educate and inspire audiences.", logo: "logo.url", free_tier: true})
 
 Resource.create!({ document_name: nil, organization_name: "The Alliance for Jewish Theatre", pdf_url: nil, website_url: "https://www.alljewishtheatre.org/", type: "BIPOC", sub_type: "Jewish", description: "Alliance for Jewish Theatre is a network of international Jewish theatres and theatre artists supporting each other through information-sharing, conferences, and virtual programs.", logo: "logo.url", free_tier: true})
+
 
 Resource.create!({ document_name: nil, organization_name: "Latino Cultural Center", pdf_url: nil, website_url: "https://www.latinoculturalcenter.org/", type: "BIPOC", sub_type: "Latinx", description: "We are an organization enriching Chicago’s cultural scene by promoting positive images of Latinos, breaking stereotypes and bringing everyone together to experience all Latino cultures.", logo: "logo.url", free_tier: true})
 
@@ -108,5 +113,73 @@ Resource.create!({ document_name: nil, organization_name: "The Lillies Award", p
 
 
 # Life Hacks
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Artist Housing", pdf_url: nil, website_url: "https://www.facebook.com/groups/163641803796228", type: "Life Hack", sub_type: "Housing", description: "This is a group to connect members of the Chicago performing arts community who have a need for housing", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Theatre People Housing Connection", pdf_url: nil, website_url: "https://www.facebook.com/groups/1410506935852476/", type: "Life Hack", sub_type: "Housing", description: "Like New York Actor Housing Connection, but for Chicago and inclusive of all forms of theatre makers since we all love each other", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Apartments.com", pdf_url: nil, website_url: "https://www.apartments.com/chicago-il/", type: "Life Hack", sub_type: "Housing", description: "Find your perfect apartment with Apartments.com", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Domu", pdf_url: nil, website_url: "https://www.domu.com/", type: "Life Hack", sub_type: "Housing", description: "Find the Best Selection of Apartments for Rent in Chicago with Domu", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "HotPads", pdf_url: nil, website_url: "https://www.hotpads.com/chicago-il/apartments-for-rent", type: "Life Hack", sub_type: "Housing", description: "Search apartments for rent in Chicago, IL with the largest and most trusted rental site", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "City of Chicago Renters Rights and Laws", pdf_url: nil, website_url: "https://www.chicago.gov/city/en/depts/doh/provdrs/renters.html", type: "Life Hack", sub_type: "Housing", description: "The City of Chicago, in partnership with tenant and landlord organizations, has formed the Renters' Rights campaign to educate Chicagoans about the legal responsibilities and rights of renters and property owners. Check out their site here.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Housing Assistance Portal", pdf_url: nil, website_url: "https://www.chicago.gov/city/en/sites/affordable-housing-programs/home.html", type: "Life Hack", sub_type: "Housing", description: "The Department of Housing and the Department of Family and Support Services have several initiatives to provide housing cost assistance to Chicago residents impacted by the coronavirus pandemic. Check them out here.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Easy Access Chicago", pdf_url: nil, website_url: "https://www.easyaccesschicago.org/", type: "Life Hack", sub_type: "Accessibility", description: "Welcome to Easy Access Chicago Your Guide to A Great, Accessible Destination", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Mayor's Office for People with Disabilities", pdf_url: nil, website_url: "https://www.chicago.gov/city/en/depts/mopd.html", type: "Life Hack", sub_type: "Accessibility", description: "The Mayor's Office for People with Disabilities (MOPD) works to make Chicago a world-class accessible city on behalf of residents and visitors with disabilities. We are committed to providing excellent customer service and value your feedback. To leave information about a recent experience with a MOPD program or service, please email MOPDFeedback@cityofchicago.org or call 312-746-5773 and select option 7, and a Program Director will follow up with you as soon as possible.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Transit Authority", pdf_url: nil, website_url: "https://www.transitchicago.com/", type: "Life Hack", sub_type: "Transportation", description: "Information about CTA bus and train service in and around Chicago. Find maps, schedules, service alerts, plan a trip, jobs, news and more!", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Accessible CTA Stops (Buses and Trains)", pdf_url: nil, website_url: "https://www.transitchicago.com/accessibility/accessibleservices/", type: "Life Hack", sub_type: "Transportation", description: "Find all of Chicago's Accessible CTA stops here", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "How-To Guide for the CTA", pdf_url: nil, website_url: "https://www.transitchicago.com/howto/", type: "Life Hack", sub_type: "Transportation", description: "New to riding transit? This section will help you learn everything you need to know using CTA, including buying your fare and getting on the bus or train, and provides helpful tips to make your trip even easier!", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "CTA Map", pdf_url: nil, website_url: "https://www.transitchicago.com/maps/", type: "Life Hack", sub_type: "Transportation", description: "The Official City of Chicago map of the CTA system.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "CTA System Alerts", pdf_url: nil, website_url: "https://www.transitchicago.com/alerts/", type: "Life Hack", sub_type: "Transportation", description: "This page provides system status information for 'L' and bus service from CTA, including rail station elevators", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Ventra", pdf_url: nil, website_url: "https://www.ventrachicago.com/", type: "Life Hack", sub_type: "Transportation", description: "The Ventra app lets you purchase passes and add transit value right from your phone. Then you can just tap and board and CTA or Pace trains or buses.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Metra System", pdf_url: nil, website_url: "https://www.metra.com/", type: "Life Hack", sub_type: "Transportation", description: "Metra is the commuter rail system in the Chicago metropolitan area serving the city of Chicago and its surrounding suburbs via the Union Pacific Railroad", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Divvy Bikes", pdf_url: nil, website_url: "https://divvybikes.com/", type: "Life Hack", sub_type: "Transportation", description: "Unlock a Bike. Unlock Chicago. · Access to thousands of bikes and scooters around Chicago", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "WaterTaxi!", pdf_url: nil, website_url: "https://www.chicagowatertaxi.com/", type: "Life Hack", sub_type: "Transportation", description: "The Chicago Water Taxi connects several Chicago neighborhoods with various dining, sightseeing and shopping attractions.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Uber", pdf_url: nil, website_url: "https://www.uber.com/", type: "Life Hack", sub_type: "Transportation", description: "Request a ride, hop in, and go", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Lyft", pdf_url: nil, website_url: "https://www.lyft.com/", type: "Life Hack", sub_type: "Transportation", description: "Lyft is your friend with a car, whenever you need one", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago's Union Station", pdf_url: nil, website_url: "https://chicagounionstation.com/travel", type: "Life Hack", sub_type: "Transportation", description: "Located in the center of the nation, Union Station is the railroad hub of the Midwest and the most accessible location in the Chicago region. ", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago O'Hare International Airport", pdf_url: nil, website_url: "https://www.flychicago.com/ohare/home/pages/default.aspx", type: "Life Hack", sub_type: "Transportation", description: "Chicago O'Hare International Airport, sometimes referred to as O'Hare, is the main international airport serving Chicago, Illinois, located on the city's Northwest Side", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Midway International Airport", pdf_url: nil, website_url: "https://www.flychicago.com/midway/home/pages/default.aspx", type: "Life Hack", sub_type: "Transportation", description: "Chicago Midway International Airport is a major commercial airport on the Southwest side of Chicago, Illinois.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Parking Garage Map", pdf_url: nil, website_url: "https://www.chicagoparkingmap.com/", type: "Life Hack", sub_type: "Transportation", description: "Parking Industry Labor Management Committee's official parking lot map for the City of Chicago", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Park Chicago App", pdf_url: nil, website_url: "https://parkchicago.com/parkchicago/", type: "Life Hack", sub_type: "Transportation", description: "Pay for street parking right from your phone", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Spot Hero", pdf_url: nil, website_url: "https://spothero.com/", type: "Life Hack", sub_type: "Transportation", description: "As the #1 downloaded parking reservation app, SpotHero provides easy parking for all, one spot at a time. Based in Chicago, SpotHero is led by founders Mark Lawrence & Larry Kiss", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "USPS Change of Address", pdf_url: nil, website_url: "https://moversguide.usps.com/mgo/disclaimer", type: "Life Hack", sub_type: "New Resident Checklist", description: "USPS Makes changing your address easy with their simply form", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Register To Vote!", pdf_url: nil, website_url: "https://www.chicagoelections.gov/en/register-to-vote-change-of-address.html", type: "Life Hack", sub_type: "New Resident Checklist", description: "Register to vote, change your voting registration address or name here.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: "Illinois Secretary of State Document Requirements to obtain a Driverʼs License/State ID Card", organization_name: "Transfering Your License", pdf_url: "https://www.ilsos.gov/publications/pdf_publications/dsd_x173.pdf", website_url: "https://apps.ilsos.gov/facilityfinder/facility", type: "Life Hack", sub_type: "New Resident Checklist", description: "To obtain a new driver's license, you must visit a Secretary of State facility to surrender your out-of-state license and pass a vision screening, written exam and possibly a drive exam. Proper identification must be presented so we can verify your full name, date of birth, social security number, Illinois residency and written signature. See Acceptable Identification Documents.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Registering Your Car", pdf_url: nil, website_url: "https://www.chicityclerk.com/chicago-city-vehicle-sticker-faqs/chicago-city-vehicle-sticker-faq/new-resident-new-vehicle-new-license-plates", type: "Life Hack", sub_type: "New Resident Checklist", description: "Easily register your new car or transfer your registeration of your current car here", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago City Stickers", pdf_url: nil, website_url: "https://ezbuy.chicityclerk.com/vehicle-stickers", type: "Life Hack", sub_type: "New Resident Checklist", description: "All Chicago residents driving and/or parking a vehicle for which they are responsible in the City of Chicago are subject to the Chicago Wheel Tax and must purchase a Chicago City Vehicle Sticker.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "New Resident Checklist", description: "", logo: "logo.url", free_tier: false})
+
 
 # Business
