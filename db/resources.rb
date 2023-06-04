@@ -179,7 +179,125 @@ Resource.create!({ document_name: nil, organization_name: "Registering Your Car"
 
 Resource.create!({ document_name: nil, organization_name: "Chicago City Stickers", pdf_url: nil, website_url: "https://ezbuy.chicityclerk.com/vehicle-stickers", type: "Life Hack", sub_type: "New Resident Checklist", description: "All Chicago residents driving and/or parking a vehicle for which they are responsible in the City of Chicago are subject to the Chicago Wheel Tax and must purchase a Chicago City Vehicle Sticker.", logo: "logo.url", free_tier: false})
 
-Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "New Resident Checklist", description: "", logo: "logo.url", free_tier: false})
 
+Resource.create!({ document_name: nil, organization_name: "CityPass", pdf_url: nil, website_url: "https://www.citypass.com/chicago-comparison", type: "Life Hack", sub_type: "Things To Do", description: "Get discounted admission to Chicago's top attractions", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Sky Deck", pdf_url: nil, website_url: "https://www.theskydeck.com/", type: "Life Hack", sub_type: "Things To Do", description: "103rd floor of the Willis Tower with clear observation boxes & views extending to four states.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Art on the Market", pdf_url: nil, website_url: "https://www.artonthemart.com/", type: "Life Hack", sub_type: "Things To Do", description: "Art on THE MART is the largest permanent digital art projection in the world, projecting contemporary artwork across the 2.5 acre river-façade of THE MART", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Chicago Magic Lounge", pdf_url: nil, website_url: "https://www.chicagomagiclounge.com/", type: "Life Hack", sub_type: "Things To Do", description: "MAGIC IS FOR EVERYONE. · Enjoy a bite and a cocktail as magicians perform impossible feats right before your eyes", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Garfield Conservatory", pdf_url: nil, website_url: "https://garfieldconservatory.org/", type: "Life Hack", sub_type: "Things To Do", description: "Chicago's Garfield Park Conservatory is one of the largest and most stunning botanical conservatories in the nation", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Lincoln Park Zoo", pdf_url: nil, website_url: "https://www.lpzoo.org/", type: "Life Hack", sub_type: "Things To Do", description: "Lincoln Park Zoo is a 35-acre zoo in Lincoln Park, Chicago, Illinois. The zoo was founded in 1868, making it the fourth oldest zoo in North America. It is also one of a few free admission zoos in all of North America", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Botanic Garden", pdf_url: nil, website_url: "https://www.chicagobotanic.org/", type: "Life Hack", sub_type: "Things To Do", description: "The Chicago Botanic Garden is a 385-acre living plant museum situated on nine islands in the Cook County Forest Preserves.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Art Institute of Chicago", pdf_url: nil, website_url: "http://www.artic.edu/", type: "Life Hack", sub_type: "Museums and Galleries", description: "The Art Institute of Chicago in Chicago's Grant Park, founded in 1879, is one of the oldest and largest art museums in the world.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Field Museum", pdf_url: nil, website_url: "http://fieldmuseum.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "The Field Museum of Natural History is a natural history museum in Chicago, Illinois, and is one of the largest such museums in the world", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Shedd Aquarium", pdf_url: nil, website_url: "http://sheddaquarium.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "Shedd Aquarium has championed the Great Lakes as a Mission Blue Hope Spot — a special place identified as critical to the health of oceans and aquatic life", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Adler Planetarium", pdf_url: nil, website_url: "http://adlerplanetarium.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "Chicago's Adler Planetarium is America's first planetarium and a premiere resource for inspiring the next generation of space explorers.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Museum of Science and Industry", pdf_url: nil, website_url: "http://msichicago.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "Welcome to the Museum of Science and Industry, Chicago—the largest science center in the Western Hemisphere.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Museum of Contemporary Art", pdf_url: nil, website_url: "http://mcachicago.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "Founded in 1967, the Museum of Contemporary Art Chicago champions the new and unexpected in contemporary art and culture through its exhibitions", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago History Museum", pdf_url: nil, website_url: "http://chicagohistory.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "Chicago History Museum is the museum of the Chicago Historical Society.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Cultural Center", pdf_url: nil, website_url: "https://www.cityofchicago.org/city/en/depts/dca/supp_info/chicago_culturalcenter.html", type: "Life Hack", sub_type: "Museums and Galleries", description: "The Chicago Cultural Center, opened in 1897, is a Chicago Landmark building operated by Chicago's Department of Cultural Affairs and Special Events that houses the city's official reception venue where the Mayor of Chicago has welcomed presidents and royalty, diplomats and community leaders", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "American Writers Museum", pdf_url: nil, website_url: "https://www.timeout.com/chicago/museums/american-writers-museum", type: "Life Hack", sub_type: "Museums and Galleries", description: "As one of the most unique Chicago museums downtown, our mission is to celebrate the enduring influence of American writers on our history, identity, culture, and daily lives.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Intuit: The Center for Intuitive and Outsider Art", pdf_url: nil, website_url: "https://www.art.org/", type: "Life Hack", sub_type: "Museums and Galleries", description: "Established in June 1991, Intuit is one of the premier museums in the world dedicated to presenting outsider and self-taught art.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Pizza Tour", pdf_url: nil, website_url: "https://pizzacityusa.com/", type: "Life Hack", sub_type: "Tours", description: "Taste legendary pizzas on Chicago's Original Pizza Tour", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Gangsters and Ghosts Tour", pdf_url: nil, website_url: "https://gangstersandghosts.com/", type: "Life Hack", sub_type: "Tours", description: "Step back a century into the lawless streets of Chicago where the crime syndicates fought for the now iconic Northside & Southside.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Chicago Architecture Tour", pdf_url: nil, website_url: "https://www.architecture.org/tours/detail/chicago-architecture-foundation-center-river-cruise-aboard-chicagos-first-lady/", type: "Life Hack", sub_type: "Tours", description: "For more than 25 years, the CAC's expertly trained docent volunteers have led the river cruise, sharing fascinating stories behind more than 50 buildings along the Chicago River. Hear how Chicago grew from a small settlement into one of the world's largest cities in less than 100 years. In just 90 minutes, you'll get the best overview of Chicago’s architecture and its history.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Urban Kayaks", pdf_url: nil, website_url: "https://urbankayaks.com/", type: "Life Hack", sub_type: "Outdoors", description: "Urban Kayaks has a wide variety of paddling options at our two sites in Chicago: the Chicago Riverwalk and our Lakefront location at Monroe Harbor.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Ping Tom Memorial Park", pdf_url: nil, website_url: "https://www.chicagoparkdistrict.com/parks-facilities/tom-ping-memorial-park", type: "Life Hack", sub_type: "Outdoors", description: "Ping Tom Park was once the hidden jewel of the Chicago Park District but has become the favorite park of people not only from Chinatown but from South Loop, east Pilsen and throughout Chicago.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Midway", pdf_url: nil, website_url: "https://www.chicagoparkdistrict.com/parks-facilities/midway-plaisance-park", type: "Life Hack", sub_type: "Outdoors", description: "The Midway Plaisance is a magnificent linear stretch of parkland between Jackson and Washington parks.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The 606", pdf_url: nil, website_url: "https://www.the606.org/", type: "Life Hack", sub_type: "Outdoors", description: "The 606 is a 2.7-mile elevated park and trail that was built on what was once an industrial train line. Today, the popular trail features a chain of street-level parks, scenic look-out points, an observatory, and public art installations.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "The White Sox", pdf_url: nil, website_url: "https://www.mlb.com/whitesox/ballpark", type: "Life Hack", sub_type: "Sports", description: "Learn more about the Chicago White Sox here!", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Chicago Cubs", pdf_url: nil, website_url: "https://www.mlb.com/cubs/ballpark", type: "Life Hack", sub_type: "Sports", description: "Follow The Chicago Cubs and the Events of Wrigley Field Here!", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Blackhawks", pdf_url: nil, website_url: "https://www.nhl.com/blackhawks", type: "Life Hack", sub_type: "Sports", description: "The Blackhawks are Chicago's premier hockey team.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Schuba's / Lincoln Hall", pdf_url: nil, website_url: "https://lh-st.com/", type: "Life Hack", sub_type: "Music", description: "Schubas and Lincoln Hall are sister venues located in Chicago's Lakeview and Lincoln Park neighborhoods. All are welcome.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Epiphany Center for the Arts", pdf_url: nil, website_url: "http://epiphanychi.com/", type: "Life Hack", sub_type: "Music", description: "Chicago's Newest & Most Unique Music & Private Events Venue. Bringing Chicago Together For the Good of Art, Entertainment and Events!", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Hideout", pdf_url: nil, website_url: "https://hideoutchicago.com/", type: "Life Hack", sub_type: "Music", description: "Over 25 years of independent music and performance at Chicago's iconic venue/community space.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Green Mill", pdf_url: nil, website_url: "http://www.greenmilljazz.com/", type: "Life Hack", sub_type: "Music", description: "Swinging sounds are on tap nightly, from big-name artists to local late-night jam sessions.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Jazz Showcase", pdf_url: nil, website_url: "https://www.jazzshowcase.com/", type: "Life Hack", sub_type: "Music", description: "Long-time (since 1947), 170-seat Jazz club showcasing local, national & international acts.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Andy's Jazz Club", pdf_url: nil, website_url: "http://www.andysjazzclub.com/", type: "Life Hack", sub_type: "Music", description: "One Of Chicago's Best-Known & Most Respected Jazz Venues, Pairing Top Jazz Artists With Casual Dining For A Truly Unique Chicago Experience.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Reggies", pdf_url: nil, website_url: "https://www.reggieslive.com/", type: "Life Hack", sub_type: "Music", description: "Reggies brings a music fan's ultimate dream to reality with a terrific bar and grill, kickin' rock club, and a music lover's record store — all under one venue", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Empty Bottle", pdf_url: nil, website_url: "http://www.emptybottle.com/", type: "Life Hack", sub_type: "Music", description: "Indie music venue & bar hosting alternative bands in a somewhat small space with cheap drinks", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Thalia Hall", pdf_url: nil, website_url: "https://www.thaliahallchicago.com/", type: "Life Hack", sub_type: "Music", description: "This landmark venue, designed as an opera house in 1892, hosts concerts by well-known musical acts.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Sleeping Village", pdf_url: nil, website_url: "https://sleeping-village.com/", type: "Life Hack", sub_type: "Music", description: "Spacious, bi-level bar with ample draft beer & cider plus coffee in the AM, live music in the PM.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Old Town School of Folk", pdf_url: nil, website_url: "http://www.oldtownschool.org/", type: "Life Hack", sub_type: "Music", description: "Founded in 1957, the Old Town School of Folk Music provides a wide range of music, dance, theater, and visual arts courses to people of all ages, and abilities, as well as concerts! ", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Kingston Mines", pdf_url: nil, website_url: "https://www.kingstonmines.com/", type: "Life Hack", sub_type: "Music", description: "Kingston Mines is a world-famous blues nightclub in Lincoln Park, Chicago, Illinois. The club was awarded the Chicago Reader's 2016 Best Blues Club", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "City Winery", pdf_url: nil, website_url: "https://citywinery.com/chicago/", type: "Life Hack", sub_type: "Music", description: "Chicago's premier venue, restaurant, and winery.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Metro", pdf_url: nil, website_url: "http://www.metrochicago.com/", type: "Life Hack", sub_type: "Music", description: "A variety of indie & alternative bands play at this popular, intimate concert venue.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "House of Blues", pdf_url: nil, website_url: "http://www.houseofblues.com/chicago", type: "Life Hack", sub_type: "Music", description: "It started in Cambridge, Massachusetts's Harvard Square where House of Blues became the premiere home for live music, folk art and Southern-inspired food.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Vic", pdf_url: nil, website_url: "https://www.jamusa.com/venues/the-vic", type: "Life Hack", sub_type: "Music", description: "In 1912, The Victoria Theater opened as an alternative to the more expensive fare playing in Chicago’s notorious downtown venues.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Riviera", pdf_url: nil, website_url: "https://www.rivieratheatre.com/", type: "Life Hack", sub_type: "Music", description: "The Riviera Theatre is a concert venue located on the north side of Chicago, Illinois, United States", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The Aragon Ballroom", pdf_url: nil, website_url: "https://specialevents.livenation.com/venues/aragon-ballroom", type: "Life Hack", sub_type: "Music", description: "Byline Bank Aragon Ballroom Bringing the hits since 1926.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "The United Center", pdf_url: nil, website_url: "www.unitedcenter.com", type: "Life Hack", sub_type: "Music", description: "United Center is an indoor arena on the Near West Side of Chicago, Illinois, United States. It is home to the Chicago Bulls of the National Basketball Association and the Chicago Blackhawks of the National Hockey League", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Subterranean", pdf_url: nil, website_url: "www.subt.net", type: "Life Hack", sub_type: "Music", description: "Two-floor venue with a variety of live entertainment from musicians to DJs to burlesque dancers", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", type: "Life Hack", sub_type: "Discounted; Free", description: "", logo: "logo.url", free_tier: false})
 
 # Business
