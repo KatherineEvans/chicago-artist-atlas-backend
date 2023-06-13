@@ -502,4 +502,29 @@ Resource.create!({ document_name: nil, organization_name: "FedEx/Kinkos", pdf_ur
 
 
 
+Resource.create!({ document_name: nil, organization_name: "League of Chicago Theatres", pdf_url: nil, website_url: "https://leagueofchicagotheatres.org/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "The League of Chicago Theatres is an alliance of 250 theatres which leverages its collective strength to support, promote, and advocate for Chicago's theatre scene.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Theatre In Chicago", pdf_url: nil, website_url: "https://www.theatreinchicago.com/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Theatre In Chicago is your source for whats on stage in Chicago. It includes a comprehensive list of plays in the Chicago area theaters.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Performink", pdf_url: nil, website_url: "https://perform.ink/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: "Chicago's home for theater and entertainment industry news, reviews, auditions, opinions, and more.", description: nil, logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Screen Magazine", pdf_url: nil, website_url: "https://screenmag.com/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Founded in Chicago in 1979, SCREEN serves as the leading resource for film, television and advertising professionals in its hometown and between the coasts.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Rescripted", pdf_url: nil, website_url: "http://rescripted.org/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Rescripted: Artist-led interactive commentary on the state of the arts, including reviews, dialogues, and essays.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "SAG-AFTRA", pdf_url: nil, website_url: "https://www.sagaftra.org/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Get the latest union news regarding contracts, agencies, notices, etc", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Actor's Equity Association", pdf_url: nil, website_url: "https://actorsequity.org/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Learn more about theatre news and audition information for union members.", logo: "logo.url", free_tier: false})
+
+
+
+Resource.create!({ document_name: nil, organization_name: "Weebly", pdf_url: nil, website_url: "https://www.weebly.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $0-$26/mth. Weebly's free website builder makes it easy to create a website, blog, or online store. Find customizable templates, domains, and easy-to-use tools for any website.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Wix", pdf_url: nil, website_url: "https://www.wix.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $16-$45/mth. Wix is for everyone and makes it possible to create a high-quality website without knowing how to code.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Squarespace", pdf_url: nil, website_url: "https://www.squarespace.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $16-$49/mth. Create a customizable website or online store with an all-in-one solution from Squarespace.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Webflow", pdf_url: nil, website_url: "https://webflow.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $0-$39/mth. Create professional, custom websites in a completely visual canvas with no code. Learn how to create a website by trying Webflow for free!", logo: "logo.url", free_tier: false})
+
+
 
