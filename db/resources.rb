@@ -385,7 +385,6 @@ address = Address.create!(address1: nil, address2: nil, city: "Chicago", state: 
 Resource.create!({ document_name: nil, organization_name: "Open Gate Movement Arts", pdf_url: nil, website_url: "https://www.facebook.com/OpenGateMovementArts/", type: "Business for Actors", sub_type: "Classes", sub_type_two:"Stage Combat", description: "To provide high-quality, accessible stage combat.", logo: "logo.url", free_tier: false, address_id: address.id})
 
 
-
 address = Address.create!(address1: nil, address2: nil, city: "Chicago", state: "IL", postal_code: nil)
 Resource.create!({ document_name: nil, organization_name: "Jackalope Playwrights Lab", pdf_url: nil, website_url: "https://www.jackalopetheatre.org/education", type: "Business for Actors", sub_type: "Residencies", sub_type_two:"Playwrighting", description: "Originally created by Jackalope Company Member and acclaimed playwright, Calamity West, the Jackalope Playwrights Lab is the staple course offered by Jackalope and has led to the development of dozens of new plays further developed and produced around the country. Through an application process, Playwrights Lab pairs an Instructor with eight participants to meet for eight weeks as they develop each participant’s full length play.", logo: "logo.url", free_tier: false, address_id: address.id})
 
@@ -403,7 +402,6 @@ Resource.create!({ document_name: nil, organization_name: "SPARK Artists in Resi
 
 address = Address.create!(address1: "1534 W Cortez St", address2: nil, city: "Chicago", state: "IL", postal_code: "60642")
 Resource.create!({ document_name: nil, organization_name: "Director’s Haven", pdf_url: nil, website_url: "https://havenchi.org/directors-haven", type: "Business for Actors", sub_type: "Residencies", sub_type_two: "Directing", description: "The Director’s Haven gives directors in the earliest stages of their professional careers a rare opportunity to take risks, hone their crafts and talents and share their vision through a fully staged production of a short play. Giving directors support to produce during their formative years, which includes a full design team, budget, marketing support and more, allows these artists to create quality work as well as provides a platform to further their artistic visibility through the creation of said work.", logo: "logo.url", free_tier: false, address_id: address.id})
-
 
 
 address = Address.create!(address1: "7900 W Division St", address2: nil, city: "River Forest", state: "IL", postal_code: "60305")
@@ -426,7 +424,6 @@ Resource.create!({ document_name: nil, organization_name: "North Central College
 
 address = Address.create!(address1: "1032 W. Sheridan Road", address2: "Suite 1200", city: "Chicago", state: "IL", postal_code: "60660")
 Resource.create!({ document_name: nil, organization_name: "Loyola", pdf_url: nil, website_url: "https://www.luc.edu/dfpa/", type: "Business for Actors", sub_type: "Colleges", sub_type_two: nil, description: "Our approach to theatre is based in the Liberal Arts; by offering a BA rather than a BFA, we emphasize the importance of interdisciplinary study in the formation of adaptable, well rounded theatre artists. Collaboration, a sharp voice for expressing social truths, and the ability to foster empathy in a diverse audience are powerful skills we learn in the theatre that prepare students for the many paths life make take them. By nurturing and educating actors, directors, administrators, playwrights, designers, technicians, dramaturgs, and teaching artists we prepare theatre artists to enter any aspect of the industry.", logo: "logo.url", free_tier: false, address_id: address.id})
-
 
 
 address = Address.create!(address1: "4001 N Ravenswood Ave", address2: "Unit 303-B", city: "Chicago", state: "IL", postal_code: "60613")
@@ -452,7 +449,6 @@ Resource.create!({ document_name: nil, organization_name: "Midsommer Flight", pd
 
 address = Address.create!(address1: "3914 N Clark St", address2: nil, city: "Chicago", state: "IL", postal_code: "60613")
 Resource.create!({ document_name: nil, organization_name: "Otherworld Theatre", pdf_url: nil, website_url: "https://www.otherworldtheatre.org/rentals", type: "Business for Actors", sub_type: "Rehearsal Spaces", sub_type_two: nil, description: "Pricing: Bradbury $12/hr; Alchemists' Lab $8/hr", logo: "logo.url", free_tier: false, address_id: address.id})
-
 
 
 address = Address.create!(address1: nil, address2: nil, city: nil, state: nil, postal_code: nil)
@@ -501,7 +497,6 @@ Resource.create!({ document_name: nil, organization_name: "Printheadshots.com", 
 Resource.create!({ document_name: nil, organization_name: "FedEx/Kinkos", pdf_url: nil, website_url: "https://www.office.fedex.com/default/copy-and-print-services", type: "Business for Actors", sub_type: "Headshots", sub_type_two: "Printing", description: "FedEx/Kinkos is great for small batch, fast, convient headshot printing!", logo: "logo.url", free_tier: false})
 
 
-
 Resource.create!({ document_name: nil, organization_name: "League of Chicago Theatres", pdf_url: nil, website_url: "https://leagueofchicagotheatres.org/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "The League of Chicago Theatres is an alliance of 250 theatres which leverages its collective strength to support, promote, and advocate for Chicago's theatre scene.", logo: "logo.url", free_tier: false})
 
 Resource.create!({ document_name: nil, organization_name: "Theatre In Chicago", pdf_url: nil, website_url: "https://www.theatreinchicago.com/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Theatre In Chicago is your source for whats on stage in Chicago. It includes a comprehensive list of plays in the Chicago area theaters.", logo: "logo.url", free_tier: false})
@@ -517,7 +512,6 @@ Resource.create!({ document_name: nil, organization_name: "SAG-AFTRA", pdf_url: 
 Resource.create!({ document_name: nil, organization_name: "Actor's Equity Association", pdf_url: nil, website_url: "https://actorsequity.org/", type: "Business for Actors", sub_type: "Theatre Sites", sub_type_two: nil, description: "Learn more about theatre news and audition information for union members.", logo: "logo.url", free_tier: false})
 
 
-
 Resource.create!({ document_name: nil, organization_name: "Weebly", pdf_url: nil, website_url: "https://www.weebly.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $0-$26/mth. Weebly's free website builder makes it easy to create a website, blog, or online store. Find customizable templates, domains, and easy-to-use tools for any website.", logo: "logo.url", free_tier: false})
 
 Resource.create!({ document_name: nil, organization_name: "Wix", pdf_url: nil, website_url: "https://www.wix.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $16-$45/mth. Wix is for everyone and makes it possible to create a high-quality website without knowing how to code.", logo: "logo.url", free_tier: false})
@@ -526,5 +520,26 @@ Resource.create!({ document_name: nil, organization_name: "Squarespace", pdf_url
 
 Resource.create!({ document_name: nil, organization_name: "Webflow", pdf_url: nil, website_url: "https://webflow.com/", type: "Business for Actors", sub_type: "Actor Websites", sub_type_two: "Build Your Own Websites", description: "Plans range from $0-$39/mth. Create professional, custom websites in a completely visual canvas with no code. Learn how to create a website by trying Webflow for free!", logo: "logo.url", free_tier: false})
 
+
+Resource.create!({ document_name: nil, organization_name: "Actors Access", pdf_url: nil, website_url: "https://actorsaccess.com/", type: "Business for Actors", sub_type: "Casting Websites", sub_type_two: nil, description: "Pricing: $68/year or $9.99/mo; Act Locally, Reach Globally. For Actors at every stage of their career.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Casting Networks", pdf_url: nil, website_url: "https://www.castingnetworks.com/", type: "Business for Actors", sub_type: "Casting Websites", sub_type_two: nil, description: "Pricing: $259.90/year or $25.99/month; Casting Networks helps performers find great roles and industry professionals find great talent. The future of casting is here.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Backstage", pdf_url: nil, website_url: "https://www.backstage.com/", type: "Business for Actors", sub_type: "Casting Websites", sub_type_two: nil, description: "Pricing: $200/yr or $24.99/mth. Find and apply to over 5000 casting calls, auditions and roles on Backstage, the most trusted platform for actors and models.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Voice123", pdf_url: nil, website_url: "https://voice123.com/", type: "Business for Actors", sub_type: "Casting Websites", sub_type_two: nil, description: "Pricing: $0-$600/yr. Voice123 is the top choice for professional voice actors and clients everywhere. Since 2003, more than 250,000 projects have been submitted.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Voices.com", pdf_url: nil, website_url: "https://www.voices.com/", type: "Business for Actors", sub_type: "Casting Websites", sub_type_two: nil, description: "Pricing: $0-$499/yr. Voices is the world's #1 voice marketplace with over 2 million members. Since 2005, the biggest and most beloved brands have trusted Voices to help them find", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Cast Voices", pdf_url: nil, website_url: "https://castvoices.com/", type: "Business for Actors", sub_type: "Casting Websites", sub_type_two: nil, description: "Pricing: $0-$25/mth. CastVoices is the voice talent platform built by voiceover professionals. Matching the right talent with the right projects is what we're all about.", logo: "logo.url", free_tier: false})
+
+
+Resource.create!({ document_name: nil, organization_name: "Chicago Theatre Week", pdf_url: nil, website_url: "https://www.choosechicago.com/chicago-theatre-week/", type: "Business for Actors", sub_type: "Festivals", sub_type_two: nil, description: "Each year, Chicago Theatre Week features value-priced tickets to more than 100 performances at theatres across the city, from musicals to improv to dramas and beyond.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Rhino Fest", pdf_url: nil, website_url: "https://rhinofest.com/", type: "Business for Actors", sub_type: "Festivals", sub_type_two: nil, description: "The event that became the Rhinoceros Theater Festival began in 1988 as an offshoot of the Bucktown Arts Fest. Now in 2023 it is producing at Chicago Dramatists, Facility Theater, Labyrinth Arts, and Color Club.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Physical Theatre Festival", pdf_url: nil, website_url: "https://www.physicalfestival.com/", type: "Business for Actors", sub_type: "Festivals", sub_type_two: nil, description: "Physical Theater Festival is an annual contemporary, visual, and physical theater festival that presents new forms of theater that are being performed around the world.", logo: "logo.url", free_tier: false})
+
+Resource.create!({ document_name: nil, organization_name: "Chicago International Puppet Theater Festival", pdf_url: nil, website_url: "https://chicagopuppetfest.org/", type: "Business for Actors", sub_type: "Festivals", sub_type_two: nil, description: "The Chicago International Puppet Theater Festival is the largest event dedicated to the artform in North America. In the heart of winter, the Festival spans 12 days and dozens of Chicago venues, sharing 100+puppetry activities with 14,000+ guests. The Festival includes performances, symposium, Catapult artist intensive, workshops, the Free Neighborhood Tour, and more. Since its launch in 2015 by Festival Founder & Artistic Director Blair Thomas, the Festival has highlighted artists from nations including Iran, Korea, Japan, Chile, South Africa as well as from Europe, Chicago and across the U.S. with the goal of promoting peace, equality, and justice on a global scale. The Festival is now annual.", logo: "logo.url", free_tier: false})
 
 
