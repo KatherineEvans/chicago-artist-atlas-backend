@@ -61,6 +61,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_24_160646) do
   end
 
   create_table "awards", force: :cascade do |t|
+    t.integer "user_id"
     t.string "name"
     t.integer "year"
     t.string "url"
