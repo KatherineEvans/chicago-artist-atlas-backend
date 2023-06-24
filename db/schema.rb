@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_22_170940) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_05_042813) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -74,6 +74,29 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_22_170940) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "union_status"
+    t.string "ethnicity"
+    t.string "pronouns"
+    t.string "gender"
+    t.string "height"
+    t.string "eye_color"
+    t.string "hair_color"
+    t.string "vocal_range"
+    t.string "instruments_played"
+    t.string "talents"
+    t.string "performance_types"
+    t.string "agency"
+    t.string "manager"
+    t.string "professional_website"
+    t.string "headshot_url"
+    t.string "resume_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
   create_table "resources", force: :cascade do |t|
     t.string "document_name"
     t.string "organization_name"
@@ -115,17 +138,24 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_22_170940) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
     t.string "first_name"
     t.string "last_name"
     t.integer "company_id"
-    t.string "email"
     t.datetime "email_verified"
-    t.string "password_digest"
     t.string "phone"
     t.datetime "date_of_birth"
     t.integer "address_id"
     t.string "metadata"
-    t.datetime "last_logged_in_at"
     t.datetime "tos_accepted_at"
     t.string "union_status"
     t.string "ethnicity"
@@ -145,6 +175,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_22_170940) do
     t.string "resume_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "jti", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["jti"], name: "index_users_on_jti", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

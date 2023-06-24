@@ -1,4 +1,4 @@
-User.create!([{first_name: "Test", last_name: "Test", company_id: nil, email: "kat@test.com", email_verified: nil, password: "password", password_confirmation: "password"}])
+# User.create!([{first_name: "Test", last_name: "Test", company_id: nil, email: "kat@test.com", email_verified: nil, password: "password", password_confirmation: "password"}])
 
 address = Address.create!(address1: "2515 Central Park Ave", address2: nil, address3: nil, city: "Evanston", state: "IL", country: "US", postal_code: "60201")
 second_act = Theater.create!(name: "2nd Act Players", business_address_id: address.id, performance_address_id: address.id, website: "https://www.evanston2ndactplayers.com", contact_name: "John N. Frank", contact_email: "johnnfrank@evanston2ndactplayers.com", casting_director: nil, casting_email: nil, notes: nil, season_type: "Stage Drama", union_status: "Non-Equity", image_url: "https://res.cloudinary.com/dzlaaytu7/image/upload/v1675218015/theater-logos/2nd_Act_Players_t3xnhv.png", active: true, mission: "Our mission is to foster emerging talent through performances that explore 2nd acts in people’s lives.", phone: "(847) 571-0235")
