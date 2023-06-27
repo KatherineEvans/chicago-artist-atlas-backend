@@ -1,4 +1,5 @@
 class UserMailer < ApplicationMailer
+  default from: email_address_with_name("#{Rails.application.credentials.gmail[:email]}", 'Chicago Artist Atlas')
 
   def welcome_message
     @greeting = "Welcome to Chicago Artist Atlas!"
