@@ -45,7 +45,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'chiartistatlas.com',
+    domain:               'chiartistatlas-dev.com',
     user_name:            'info@chiartistatlas.com',
     password:             Rails.application.credentials.gmail[:app_password],
     authentication:       'plain',
