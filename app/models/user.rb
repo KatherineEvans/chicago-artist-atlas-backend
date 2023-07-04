@@ -6,7 +6,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :email, uniqueness: true
 
-  devise :database_authenticatable, :registerable, :recoverable, :trackable, :omniauthable, omniauth_providers: [:google_oauth2]
+  devise :database_authenticatable, :registerable, :recoverable, :trackable, :omniauthable, :validatable, omniauth_providers: [:google_oauth2]
   
   devise :jwt_authenticatable, jwt_revocation_strategy: self
   has_many :trainings
