@@ -37,10 +37,10 @@ class Users::SessionsController < Devise::SessionsController
         return @user
       else
         render json: {
-          messages: "Cannot get User",
+          messages: "The email and password you entered did not match our records. Please double check and try again.",
           is_success: false,
           data: {}
-        }, status: :failure
+        }, status: :unauthorized
       end
     end
 end
