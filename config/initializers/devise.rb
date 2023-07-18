@@ -159,6 +159,8 @@ Devise.setup do |config|
   # unconfirmed_email column, and copied to email column on successful confirmation.
   config.reconfirmable = true
 
+  # Hide specific fields
+  Devise::Models::Authenticatable::BLACKLIST_FOR_SERIALIZATION.concat [:first_name, :last_name]
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [:email]
 

@@ -6,10 +6,15 @@ class Users::SessionsController < Devise::SessionsController
   def create
     if @user.valid_password?(sign_in_params[:password])
       sign_in "user", @user
+      user = {
+        first_name: @user.first_name, 
+        last_name: @user.last_name,
+        email: @user.email,
+      }
       render json: {
         messages: "Signed In Successfully",
         is_success: true,
-        data: {user: @user}
+        data: {user: user}
       }, status: :ok
     else
       render json: {
@@ -28,6 +33,7 @@ class Users::SessionsController < Devise::SessionsController
     def load_user
       @user = User.find_for_database_authentication(email: sign_in_params[:email])
       if @user
+        
         return @user
       else
         render json: {

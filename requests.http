@@ -26,6 +26,9 @@ Content-Type: application/json
   }
 }
 
+### Session destroy
+DELETE http://localhost:3000/users/sign_out.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZjFkZGY1Zi03NDU2LTQ4YjItYWNiMy0yYmE3YWE3ZThjMGUiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg4NjYzNzg1LCJleHAiOjE2ODg3NTAxODV9.9A2Gl-X8LeT8QsUT5iKC878d4Rasc1_sBYiXu4mpwT8
 
 ### Password Reset
 POST http://localhost:3000/users/password.json
@@ -39,7 +42,11 @@ Content-Type: application/json
 
 ### Theater Index
 GET http://localhost:3000/theaters.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNjcyNzYwZi1kOWExLTQwOTYtYWZmYi1mZmRjYzlhYmI0MWQiLCJzdWIiOiIxMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY4NjY2OTg1MywiZXhwIjoxNjg2NzU2MjUzfQ.-aH-gxXQABcywZmIERrvYBUn1mW3DffZLL6eIBfwzMY
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZjFkZGY1Zi03NDU2LTQ4YjItYWNiMy0yYmE3YWE3ZThjMGUiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg4NjYzNzg1LCJleHAiOjE2ODg3NTAxODV9.9A2Gl-X8LeT8QsUT5iKC878d4Rasc1_sBYiXu4mpwT8
 
 ### Auditions
 GET http://localhost:3000/auditions.json
+
+### Profile
+GET http://localhost:3000/profile.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNzU1NTBkNy02YjliLTRkODItOTRjZC0yZGMyN2Q1MmYyMTIiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg5Njg2NTA5LCJleHAiOjE2ODk3NzI5MDl9.IVWnO2qjzGKU1sWVbtz7xKJCU5V4q_BAAuyo71veTFo

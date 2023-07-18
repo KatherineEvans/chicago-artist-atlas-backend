@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   }
 
   # post "/sessions" => "sessions#create"
-  get "/users" => "users#index"
   get "/theaters" => "theaters#index"
   get "/auditions" => "auditions#index"
+  get "/profile" => "profiles#show"
 end
