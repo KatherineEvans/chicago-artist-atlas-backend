@@ -37,9 +37,15 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem "rack-cors"
 
-gem 'jwt'
-
 gem "seed_dump"
+
+gem "devise"
+
+gem "omniauth-google-oauth2"
+
+gem "omniauth-rails_csrf_protection"
+
+gem 'devise-jwt'
 
 group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'

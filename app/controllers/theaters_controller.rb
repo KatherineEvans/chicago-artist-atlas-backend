@@ -1,4 +1,5 @@
 class TheatersController < ApplicationController
+
   def index
     # pagination 
     search = params[:search]

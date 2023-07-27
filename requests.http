@@ -1,30 +1,52 @@
 ### User Index
-GET http://localhost:3000/users
+GET http://localhost:3000/users.json
 
 ### User Create
-POST http://localhost:3000/users
+POST http://localhost:3000/users.json
 Content-Type: application/json
 
-{
-  "first_name": "ATLAS",
-  "last_name": "User",
-  "email": "info@chiartistatlas.com",
-  "password": "ILoveChicagoTheater",
-  "password_confirmation": "ILoveChicagoTheater",
-  "pronouns": "they/them"
+{ 
+  "user": {
+    "first_name": "Katherine",
+    "last_name": "Evans",
+    "email": "katevansdev@gmail.com",
+    "password": "password",
+    "password_confirmation": "password"
+  }
 }
 
 ### Session create
-POST http://localhost:3000/sessions
+POST http://localhost:3000/users/sign_in.json
 Content-Type: application/json
 
 {
-  "email": "katherine@test.com",
-  "password": "password"
+  "user":{
+    "email": "katevansdev@gmail.com",
+    "password": "password"
+  }
+}
+
+### Session destroy
+DELETE http://localhost:3000/users/sign_out.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZjFkZGY1Zi03NDU2LTQ4YjItYWNiMy0yYmE3YWE3ZThjMGUiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg4NjYzNzg1LCJleHAiOjE2ODg3NTAxODV9.9A2Gl-X8LeT8QsUT5iKC878d4Rasc1_sBYiXu4mpwT8
+
+### Password Reset
+POST http://localhost:3000/users/password.json
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "evans.katherine.e@gmail.com"
+  }
 }
 
 ### Theater Index
-GET http://localhost:3000/theaters?page_size=5&page_number=2&search=Aguijon
+GET http://localhost:3000/theaters.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZjFkZGY1Zi03NDU2LTQ4YjItYWNiMy0yYmE3YWE3ZThjMGUiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg4NjYzNzg1LCJleHAiOjE2ODg3NTAxODV9.9A2Gl-X8LeT8QsUT5iKC878d4Rasc1_sBYiXu4mpwT8
 
 ### Auditions
-GET http://localhost:3000/auditions
+GET http://localhost:3000/auditions.json
+
+### Profile
+GET http://localhost:3000/profile.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNzU1NTBkNy02YjliLTRkODItOTRjZC0yZGMyN2Q1MmYyMTIiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg5Njg2NTA5LCJleHAiOjE2ODk3NzI5MDl9.IVWnO2qjzGKU1sWVbtz7xKJCU5V4q_BAAuyo71veTFo

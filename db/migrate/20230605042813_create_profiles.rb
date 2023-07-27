@@ -1,18 +1,7 @@
-class CreateUsers < ActiveRecord::Migration[7.0]
-  def change
-    create_table :users do |t|
-      t.string :first_name
-      t.string :last_name
-      t.integer :company_id
-      t.string :email
-      t.datetime :email_verified
-      t.string :password_digest
-      t.string :phone
-      t.datetime :date_of_birth
-      t.integer :address_id
-      t.string :metadata
-      t.datetime :last_logged_in_at
-      t.datetime :tos_accepted_at
+class CreateProfiles < ActiveRecord::Migration[7.0]
+  def self.up
+    create_table :profiles do |t|
+      t.integer :user_id
       t.string :union_status
       t.string :ethnicity
       t.string :pronouns
@@ -29,8 +18,16 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :professional_website
       t.string :headshot_url
       t.string :resume_url
-
+      t.string :headline
+      t.text :bio
       t.timestamps
     end
+
+    add_index :profiles, :user_id
   end
+
+  def self.down
+    drop_table :profiles
+  end
+
 end

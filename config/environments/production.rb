@@ -43,7 +43,7 @@ Rails.application.configure do
 
   # Include generic and useful information about system operation, but avoid logging too much
   # information to avoid inadvertent exposure of personally identifiable information (PII).
-  config.log_level = :info
+  config.log_level = :warn
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
@@ -56,6 +56,20 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "chicago_artist_atlas_backend_production"
 
   config.action_mailer.perform_caching = false
+
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'chiartistatlas.com',
+    user_name:            'info@chiartistatlas.com',
+    password:             Rails.application.credentials.gmail[:app_password],
+    authentication:       'plain',
+    enable_starttls_auto: true,
+    open_timeout:         5,
+    read_timeout:         5 
+  }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
