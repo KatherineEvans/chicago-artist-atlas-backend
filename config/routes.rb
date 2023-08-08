@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "/theaters" => "theaters#index"
   get "/auditions" => "auditions#index"
   get "/profile" => "profiles#show"
+  get "/resources" => "resources#index"
 end
