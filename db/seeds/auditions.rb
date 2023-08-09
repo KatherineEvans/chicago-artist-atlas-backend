@@ -85,7 +85,3 @@ audition_address1: "1723 Glenview Rd", audition_address2: nil, audition_address3
 Character.create!(audition_id: audition.id, name: "Jim", age: "20s-early 30s", gender: "Male", ethnicity: "Any/Open", description: "hardworking, trustworthy, a gentleman, could be a non-singer", skills: "", notes: nil)
 Character.create!(audition_id: audition.id, name: "Della", age: "20s-30s", gender: "Female", ethnicity: "Any/Open", description: "romantic, intelligent, direct, could be a non-singer", skills: "", notes: nil)
 Character.create!(audition_id: audition.id, name: "Ensemble", age: "Open", gender: "Open", ethnicity: "Any/Open", description: "Seeking 4 strong singer/actors to play all of the other roles including a madrigal quartet", skills: "Vocalists", notes: nil)
-
-
-
-
