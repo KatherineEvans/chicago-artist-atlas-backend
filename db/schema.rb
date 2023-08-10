@@ -75,6 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.datetime "callback_date3"
     t.string "callback_time3"
     t.integer "audition_address_id"
+    t.integer "callback_address_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
