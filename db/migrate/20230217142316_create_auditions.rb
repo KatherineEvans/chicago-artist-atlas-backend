@@ -39,6 +39,7 @@ class CreateAuditions < ActiveRecord::Migration[7.0]
       t.datetime :callback_date3
       t.string :callback_time3
       t.integer :audition_address_id
+      t.integer :callback_address_id
 
       t.timestamps
     end
