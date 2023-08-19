@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_17_140958) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -200,6 +200,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.string "degree"
     t.text "note"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_roles", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "character_id"
+    t.boolean "submitted"
+    t.datetime "submitted_date"
+    t.boolean "invited_to_callbacks"
+    t.boolean "cast_in_show"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
