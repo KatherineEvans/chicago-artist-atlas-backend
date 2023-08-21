@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 
 ### Theater Index
-GET http://localhost:3000/theaters.json
+GET http://localhost:3000/theaters.json?search=Orch
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZjFkZGY1Zi03NDU2LTQ4YjItYWNiMy0yYmE3YWE3ZThjMGUiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg4NjYzNzg1LCJleHAiOjE2ODg3NTAxODV9.9A2Gl-X8LeT8QsUT5iKC878d4Rasc1_sBYiXu4mpwT8
 
 ### Auditions
