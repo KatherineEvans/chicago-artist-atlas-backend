@@ -1,20 +1,12 @@
 class CharactersController < ApplicationController
 
-  def create_user_role
-    @user_role = UserRole.create(
-      user_id: current_user.id,
-      character_id: params[:character_id],
-      submitted: false,
-      submitted_date: null,
-      invited_to_callbacks: false,
-      cast_in_show: false
-    )
+  # def create 
+  #   render json: {message: "hey"}
+  # end
 
-    if @user_role.valid?
-      render json: {message: "Success"}
-    else
-      render json: {errors: @user_role.errors.full_messages}, status: 422
-    end
+  def 
+    user_role = UserRole.find(params[:id])
+    render json: user_role
   end
 
 end

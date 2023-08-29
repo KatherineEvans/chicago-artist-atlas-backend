@@ -10,4 +10,9 @@ Rails.application.routes.draw do
   get "/auditions" => "auditions#index"
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
+
+  get "/user_roles" => "user_roles#index"
+  get "/user_roles/:id" => "user_roles#show"
+  post "/user_roles" => "user_roles#create"
+  delete "/user_roles/:id" => "user_roles#destroy"
 end
