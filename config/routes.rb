@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
 
-  get "/user_roles" => "user_roles#index"
-  get "/user_roles/:id" => "user_roles#show"
-  post "/user_roles" => "user_roles#create"
-  delete "/user_roles/:id" => "user_roles#destroy"
+  # get "/user_roles" => "user_roles#index"
+  # get "/user_roles/:id" => "user_roles#show"
+  # post "/user_roles" => "user_roles#create"
+  # delete "/user_roles/:id" => "user_roles#destroy"
+  resources :user_roles, :except => [:new, :edit]
 end

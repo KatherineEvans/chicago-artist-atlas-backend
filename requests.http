@@ -55,4 +55,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNzU1NTBkNy02YjliLTRkODItO
 GET http://localhost:3000/resources.json
 
 ### UserRole w/stuff
-GET http://localhost:3000/user_role/1.json
+GET http://localhost:3000/user_roles.json

@@ -1,6 +1,6 @@
 class UserRolesController < ApplicationController
   def index
-    user_roles = current_user.user_roles
+    user_roles = current_user.user_roles.where(deleted_at: nil)
 
     if params[:type] == "pluck"
       user_roles = user_roles.pluck("character_id")
@@ -32,11 +32,6 @@ class UserRolesController < ApplicationController
     end
   end
 
-  def update
-    @user_role = UserRole.find(params[:id])
-  #   @user_role.update()
-  end
-
   def create
     @user_role = UserRole.create(
       user_id: current_user.id,
@@ -54,7 +49,30 @@ class UserRolesController < ApplicationController
     end
   end
 
+  def update
+    @user_role = UserRole.find(params[:id])
+    @user_role.update(
+      user_id: current_user.id,
+      character_id: params[:character_id],
+      submitted: params[:submitted],
+      submitted_date: params[:submitted_date],
+      invited_to_callbacks: params[:invited_to_callbacks],
+      cast_in_show: params[:cast_in_show]
+    )
+    if @user_role.valid?
+      render json: @user_role
+    else
+      render json: {errors: @user_role.errors.full_messages}, status: 422
+    end
+  end
+
   def destroy
     @user_role = UserRole.find(params[:id])
+    @user_role.update(
+      deleted_at: Date.current
+    )
+    @user_role.valid? ?
+    (render json: {message: "Deleted"}) :
+    (render json: {errors: @user_role.errors.full_messages}, status: 422)
   end
 end
