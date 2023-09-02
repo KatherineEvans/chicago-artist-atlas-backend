@@ -1,7 +1,35 @@
 class UserRolesController < ApplicationController
   def index
     user_roles = current_user.user_roles
-    render json: user_roles
+
+    if params[:type] == "pluck"
+      user_roles = user_roles.pluck("character_id")
+      render json: user_roles
+    else
+
+      user_roles = user_roles.includes(character: :audition)
+
+      saved = []
+      submitted = []
+      callbacks = []
+      cast = []
+
+      user_roles.each do |role|
+        r = {role: role, character: role.character, audition: role.audition}
+        case role
+        when role.submitted
+          submitted << r
+        when role.invited_to_callbacks
+          callbacks << r
+        when role.cast_in_show
+          cast << r
+        else
+          saved << r
+        end
+      end
+
+      render json: {saved: saved, submitted: submitted, callbacks: callbacks, cast: cast}
+    end
   end
 
   def update
