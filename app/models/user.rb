@@ -15,5 +15,5 @@ class User < ApplicationRecord
   has_many :profiles
   has_many :user_roles
   belongs_to :address, optional: true
-  belongs_to :company, optional: true
+  # belongs_to :company, optional: true
 end

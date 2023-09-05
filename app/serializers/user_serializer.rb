@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :first_name, :last_name, :email, :address, :trainings, :awards, :performances, :profiles, :user_roles
+  attributes :id, :first_name, :last_name, :email, :phone, :date_of_birth, :address, :trainings, :awards, :performances, :profiles, :user_roles
 
   has_many :trainings
   has_many :awards
@@ -7,5 +7,6 @@ class UserSerializer < ActiveModel::Serializer
   has_many :profiles
   has_many :user_roles
   belongs_to :address, optional: true
+  # belongs_to :company, optional: true
   
 end

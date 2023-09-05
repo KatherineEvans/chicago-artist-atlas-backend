@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_02_213143) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_05_024753) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -141,6 +141,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_213143) do
     t.text "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "keep_private"
+    t.string "age"
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 

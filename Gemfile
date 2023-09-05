@@ -12,7 +12,7 @@ gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.6.7"
 gem 'active_model_serializers', '~> 0.10.0'
-
+gem 'cloudinary'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
