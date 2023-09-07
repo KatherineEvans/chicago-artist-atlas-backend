@@ -2,7 +2,7 @@ class ProfilesController < ApplicationController
   before_action :authenticate_user!, only: [:show]
 
   def show
-    render json: current_user
+    render json: current_user.profiles.first
   end
 
   def create
