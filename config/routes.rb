@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get "/resources" => "resources#index"
   
   resources :awards, :except => [:new, :edit, :show]
-  resources :performances, :except => [:new, :edit]
+  resources :performances, :except => [:new, :edit, :show]
   resources :profiles, :except => [:new, :edit, :index, :destroy]
   resources :talents, :except => [:new, :edit, :show]
   resources :trainings, :except => [:new, :edit, :show]

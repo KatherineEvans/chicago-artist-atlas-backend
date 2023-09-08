@@ -1,0 +1,2 @@
+class TalentCategory < ApplicationRecord
+end

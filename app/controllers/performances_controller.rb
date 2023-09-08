@@ -20,7 +20,7 @@ class PerformancesController < ApplicationController
     )
 
     if performance.valid?
-      render json: performance
+      render json: performance.as_json
     else
       render json: {errors: performance.errors.full_messages}, status: 422
     end
