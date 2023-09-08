@@ -10,7 +10,8 @@ class AwardsController < ApplicationController
       name: params[:name], 
       year: params[:year], 
       url: params[:url], 
-      note: params[:note]
+      note: params[:note],
+      organization: params[:organization]
     )
 
     if award.valid?
@@ -26,6 +27,7 @@ class AwardsController < ApplicationController
       name: params[:name] || award.name, 
       year: params[:year] || award.year, 
       url: params[:url] || award.url, 
+      organization: params[:organization] || award.organization,
       note: params[:note] || award.note
     )
 
