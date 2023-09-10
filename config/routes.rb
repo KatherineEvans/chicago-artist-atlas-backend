@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/auditions" => "auditions#index"
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
+  get "/talent-categories" => "talents#categories"
   
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]
