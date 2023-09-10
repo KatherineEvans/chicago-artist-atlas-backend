@@ -21,6 +21,8 @@ class TalentsController < ApplicationController
   end
 
   def create
+    current_user.talents.destroy_all
+    
     if params[:talents]
       params[:talents].each do |key, _value|
         talent = Talent.create(
