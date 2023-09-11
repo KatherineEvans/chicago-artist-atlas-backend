@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_08_151047) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_11_032324) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -143,7 +143,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_08_151047) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "keep_private"
-    t.string "age"
+    t.string "age_low"
+    t.string "age_high"
+    t.string "other_gender"
+    t.string "other_pronouns"
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 

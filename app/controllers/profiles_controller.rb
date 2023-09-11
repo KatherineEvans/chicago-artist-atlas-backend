@@ -15,7 +15,8 @@ class ProfilesController < ApplicationController
 
     profile = Profile.create(
       user_id: current_user.id,
-      age: params[:age],
+      age_low: params[:age_low],
+      age_high: params[:age_high],
       union_status: params[:union_status],
       ethnicity: params[:ethnicity],
       pronouns: params[:pronouns],
@@ -27,7 +28,9 @@ class ProfilesController < ApplicationController
       manager: params[:manager],
       headshot_url: image_url,
       headline: params[:headline],
-      bio: params[:bio]
+      bio: params[:bio],
+      other_gender: params[:other_gender],
+      other_pronouns: params[:other_pronouns]
       # vocal_range: params[:vocal_range],
       # performance_types: params[:performance_types],
       # professional_website: params[:professional_website],
@@ -53,7 +56,8 @@ class ProfilesController < ApplicationController
    
     profile = Profile.find(params[:id])
     profile.update(
-      age: params[:age],
+      age_low: params[:age_low],
+      age_high: params[:age_high],
       union_status: params[:union_status],
       ethnicity: params[:ethnicity],
       pronouns: params[:pronouns],
@@ -65,7 +69,9 @@ class ProfilesController < ApplicationController
       manager: params[:manager],
       headshot_url: image_url,
       headline: params[:headline],
-      bio: params[:bio]
+      bio: params[:bio],
+      other_gender: params[:other_gender],
+      other_pronouns: params[:other_pronouns]
     )
     if profile.valid?
       render json: profile
