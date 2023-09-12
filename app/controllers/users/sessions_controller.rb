@@ -10,6 +10,7 @@ class Users::SessionsController < Devise::SessionsController
         first_name: @user.first_name, 
         last_name: @user.last_name,
         email: @user.email,
+        generated_at: DateTime.now
       }
       render json: {
         messages: "Signed In Successfully",

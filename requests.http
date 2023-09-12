@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 
 ### Theater Index
-GET http://localhost:3000/theaters.json
+GET http://localhost:3000/theaters.json?search=Orch
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZjFkZGY1Zi03NDU2LTQ4YjItYWNiMy0yYmE3YWE3ZThjMGUiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg4NjYzNzg1LCJleHAiOjE2ODg3NTAxODV9.9A2Gl-X8LeT8QsUT5iKC878d4Rasc1_sBYiXu4mpwT8
 
 ### Auditions
@@ -49,7 +49,61 @@ GET http://localhost:3000/auditions.json
 
 ### Profile
 GET http://localhost:3000/profile.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNzU1NTBkNy02YjliLTRkODItOTRjZC0yZGMyN2Q1MmYyMTIiLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg5Njg2NTA5LCJleHAiOjE2ODk3NzI5MDl9.IVWnO2qjzGKU1sWVbtz7xKJCU5V4q_BAAuyo71veTFo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MTVlNDEyMy0wOWYzLTRiZmQtODQ2Zi00MjFlMDJlMWNhMTAiLCJzdWIiOiIzIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjkzODc3MzYzLCJleHAiOjE2OTQ0ODIxNjN9.PyoZkwbMbMSTTxlEJPzMGvtJkXh5G39znkuWXQJHR-0
 
 ### Resources
 GET http://localhost:3000/resources.json
+
+### UserRole w/stuff
+GET http://localhost:3000/user_roles.json
+
+###
+POST http://localhost:3000/awards.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MTVlNDEyMy0wOWYzLTRiZmQtODQ2Zi00MjFlMDJlMWNhMTAiLCJzdWIiOiIzIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjkzODc3MzYzLCJleHAiOjE2OTQ0ODIxNjN9.PyoZkwbMbMSTTxlEJPzMGvtJkXh5G39znkuWXQJHR-0
+
+{
+  "name": "Best Coder Award",
+  "year": 2023,
+  "url": "test.jpg",
+  "note": "stuff"
+}
+
+###
+POST http://localhost:3000/performances.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MTVlNDEyMy0wOWYzLTRiZmQtODQ2Zi00MjFlMDJlMWNhMTAiLCJzdWIiOiIzIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjkzODc3MzYzLCJleHAiOjE2OTQ0ODIxNjN9.PyoZkwbMbMSTTxlEJPzMGvtJkXh5G39znkuWXQJHR-0
+
+{
+  "title": "Sally's Shoes",
+  "url": "sallysshoes.com",
+  "role": "Sally",
+  "director": "Anna Troy",
+  "musical_director": "Tiger Evans",
+  "theater_group": "Theater Evolve",
+  "running_date_start": "2023-09-20",
+  "running_date_end": "2023-10-20",
+  "description": "Sally's shoes is a great play. TBH I forgot what 'timeframe' means..."
+}
+
+###
+POST http://localhost:3000/talents.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MTVlNDEyMy0wOWYzLTRiZmQtODQ2Zi00MjFlMDJlMWNhMTAiLCJzdWIiOiIzIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjkzODc3MzYzLCJleHAiOjE2OTQ0ODIxNjN9.PyoZkwbMbMSTTxlEJPzMGvtJkXh5G39znkuWXQJHR-0
+
+{
+  "name": "Swordplay"
+}
+
+###
+PATCH http://localhost:3000/trainings.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2MTVlNDEyMy0wOWYzLTRiZmQtODQ2Zi00MjFlMDJlMWNhMTAiLCJzdWIiOiIzIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjkzODc3MzYzLCJleHAiOjE2OTQ0ODIxNjN9.PyoZkwbMbMSTTxlEJPzMGvtJkXh5G39znkuWXQJHR-0
+
+{
+  "institution": "Indiana University",
+  "city": "Bloomington",
+  "state": "IN",
+  "degree": "Bachelors of Science in Arts Management",
+  "year": 2013
+}

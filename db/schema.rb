@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_11_032324) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -75,6 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.datetime "callback_date3"
     t.string "callback_time3"
     t.integer "audition_address_id"
+    t.integer "callback_address_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -87,6 +88,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "organization"
   end
 
   create_table "characters", force: :cascade do |t|
@@ -140,6 +142,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.text "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "keep_private"
+    t.string "age_low"
+    t.string "age_high"
+    t.string "other_gender"
+    t.string "other_pronouns"
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
@@ -159,11 +166,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "talents", force: :cascade do |t|
+  create_table "talent_categories", force: :cascade do |t|
     t.string "name"
+    t.string "category"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "talents", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "talent_category_id"
+    t.string "level"
+    t.string "other"
   end
 
   create_table "theaters", force: :cascade do |t|
@@ -201,6 +217,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_131246) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "year"
+  end
+
+  create_table "user_roles", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "character_id"
+    t.boolean "submitted"
+    t.datetime "submitted_date"
+    t.boolean "invited_to_callbacks"
+    t.boolean "cast_in_show"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "deleted_at"
   end
 
   create_table "users", force: :cascade do |t|

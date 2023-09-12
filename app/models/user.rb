@@ -13,6 +13,8 @@ class User < ApplicationRecord
   has_many :awards
   has_many :performances
   has_many :profiles
+  has_many :user_roles
+  has_many :talents
   belongs_to :address, optional: true
-  belongs_to :company, optional: true
+  # belongs_to :company, optional: true
 end
