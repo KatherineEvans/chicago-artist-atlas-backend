@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
   get "/talent-categories" => "talents#categories"
+  get "/current_user" => "users#show"
+  patch "/current_user" => "users#update"
   
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]
