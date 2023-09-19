@@ -539,3 +539,64 @@ Resource.create!({ document_name: nil, organization_name: "Rhino Fest", pdf_url:
 Resource.create!({ document_name: nil, organization_name: "Physical Theatre Festival", pdf_url: nil, website_url: "https://www.physicalfestival.com/", primary_type: "Business for Actors", secondary_type: "Festivals", tertiary_type: nil, description: "Physical Theater Festival is an annual contemporary, visual, and physical theater festival that presents new forms of theater that are being performed around the world.", logo: "https://res.cloudinary.com/dzlaaytu7/image/upload/v1687229932/Business%20Resource%20Logos/Festivals/PhysicalTheaterFest_r9u4hd.jpg", free_tier: false})
 
 Resource.create!({ document_name: nil, organization_name: "Chicago International Puppet Theater Festival", pdf_url: nil, website_url: "https://chicagopuppetfest.org/", primary_type: "Business for Actors", secondary_type: "Festivals", tertiary_type: nil, description: "The Chicago International Puppet Theater Festival is the largest event dedicated to the artform in North America. In the heart of winter, the Festival spans 12 days and dozens of Chicago venues, sharing 100+puppetry activities with 14,000+ guests. The Festival includes performances, symposium, Catapult artist intensive, workshops, the Free Neighborhood Tour, and more. Since its launch in 2015 by Festival Founder & Artistic Director Blair Thomas, the Festival has highlighted artists from nations including Iran, Korea, Japan, Chile, South Africa as well as from Europe, Chicago and across the U.S. with the goal of promoting peace, equality, and justice on a global scale. The Festival is now annual.", logo: "https://res.cloudinary.com/dzlaaytu7/image/upload/v1687229931/Business%20Resource%20Logos/Festivals/ChicagoPuppetTheaterFest_key5jm.jpg", free_tier: false})
+
+
+#Production Staff Resources 
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "We Wear Culture: The stories behind what we wear", organization_name: "Google Arts and Culture", pdf_url: nil, website_url: "https://artsandculture.google.com/project/fashion", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "Google Arts and Culture has a great resource for education and inspiration on the culture behind what we wear!", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "The Elizabethan Costuming Page ", pdf_url: nil, website_url: "http://www.elizabethancostume.net/", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "Explore a wealth of information about Elizabethan costumes", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "The Costume Designers Guild", pdf_url: nil, website_url: "https://www.costumedesignersguild.com/", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "The Costume Designers Guild, Local 892, is a union of professional costume designers, assistant costume designers, and illustrators working in film, television, commercials and other media.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Henry Art Gallery's Costumes and Textiles Database", pdf_url: nil, website_url: "https://henryart.org/collections/costume-textiles", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "Eplore Henry Art Gallery's 18,000 objects including textiles, clothing, and accessories —ranging in date from 1000 BCE to the present from countries around the world!", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "The Costume Institue at The Met", pdf_url: nil, website_url: "https://www.metmuseum.org/about-the-met/collection-areas/the-costume-institute", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "The Costume Institute's collection of more than thirty-three thousand objects represents seven centuries of fashionable dress and accessories for men, women, and children, from the fifteenth century to the present.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "A Guide to Destressing", pdf_url: nil, website_url: "https://www.andsewingishalfthebattle.com/costume-weathering-distressing-guide/", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: ""And Sewing Is Half The Battle" has a great guide on various methods to destress and weather clothing!", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Tyranny of Style", pdf_url: nil, website_url: "https://tyrannyofstyle.com/", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "Covering costume design for film, TV, theatre, theme parks, animation, and video games. Editor of Tyranny Of Style, Joe Kucharski publishes interviews, articles, and images related to costume design, history, and new technology.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "The Costumer's Manifesto", pdf_url: nil, website_url: "https://costumes.org/", primary_type: "Production Staff Resources", secondary_type: "Costumes", tertiary_type: nil, description: "The Costumer Manifesto‘s mission is to create an online forum where all costumers whether theatrical, film, hobbyists, historic re creationists, museum curators, makers, renters, collectors and others can share ideas and information, find support and inspiration, and enjoy a sense of community", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Stage Lighting Design 101", pdf_url: nil, website_url: "https://billwilliams.ca/resources/sld.htm", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "This is a comprehensive overview of the art and science of lighting design, for entertainment lighting applications. This series is intended as a quick reference for the lighting student, educator, or professional.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Show Design CAD And Visualization Software Training Videos", pdf_url: nil, website_url: "https://lightingtrainer.com/cad-software/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Collection of industry-leading show design CAD and visualisation software, including Capture, Cast WYSIWYG, Vectorworks, and more. Includes links to product websites and training videos.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "LightingTrainer.com", pdf_url: nil, website_url: "https://lightingtrainer.com/basics/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Get a great overview of all things lighting from color theory to rigging!", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Melborn Theatre Company's Lighting Q&A sessions!", pdf_url: nil, website_url: "https://www.mtc.com.au/discover-more/backstage/tag/lighting-design", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Series of interviews with professional lighting designers about their work on various productions at the Melbourne Theatre Company.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Theatre Lighting Workshop's Example Plans and Patch Sheets", pdf_url: nil, website_url: "https://www.theatrelightingworkshops.com/lighting-plans/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Here is a great resource of examples for how to create lighting plans and patch sheets", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "A History of Light and Lighting", pdf_url: nil, website_url: "https://billwilliams.ca/resources/history/hol.htm", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "A history of light and lighting from 4.5 Billion BC to the 1990s", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Color Lab", pdf_url: nil, website_url: "https://scenicandlighting.com/colorlab/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "This is a browser-based lighting lab. It is a great way to examine how color mixes both on actors and on the floor from three directions.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Light Lab", pdf_url: nil, website_url: "https://scenicandlighting.com/lightlab/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "This is also completely browser-based. It is a complete proscenium stage with a traditional dance-lighting plot in place. It allows complete control of color for top-light, side-light, and the cyclorama, plus footlights, high-sides, and specials.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "The Lighting Archive", pdf_url: nil, website_url: "https://thelightingarchive.org/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "The Lighting Archive website is developing a collection of actual plots, focus charts, cue sheets from real shows. We will place an emphasis on historical productions and designers who have made important contributions to our field.", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
