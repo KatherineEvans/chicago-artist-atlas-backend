@@ -578,13 +578,13 @@ address = Address.create!(address1: "", address2: nil, city: "", state: "", post
 Resource.create!({ document_name: nil, organization_name: "LightingTrainer.com", pdf_url: nil, website_url: "https://lightingtrainer.com/basics/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Get a great overview of all things lighting from color theory to rigging!", logo: "", free_tier: false, address_id: address.id})
 
 address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
-Resource.create!({ document_name: nil, organization_name: "Melborn Theatre Company's Lighting Q&A sessions!", pdf_url: nil, website_url: "https://www.mtc.com.au/discover-more/backstage/tag/lighting-design", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Series of interviews with professional lighting designers about their work on various productions at the Melbourne Theatre Company.", logo: "", free_tier: false, address_id: address.id})
+Resource.create!({ document_name: "Lighting Designer Q&A", organization_name: "Melborn Theatre Company", pdf_url: nil, website_url: "https://www.mtc.com.au/discover-more/backstage/tag/lighting-design", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Series of interviews with professional lighting designers about their work on various productions at the Melbourne Theatre Company.", logo: "", free_tier: false, address_id: address.id})
 
 address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
-Resource.create!({ document_name: nil, organization_name: "Theatre Lighting Workshop's Example Plans and Patch Sheets", pdf_url: nil, website_url: "https://www.theatrelightingworkshops.com/lighting-plans/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Here is a great resource of examples for how to create lighting plans and patch sheets", logo: "", free_tier: false, address_id: address.id})
+Resource.create!({ document_name: "Theatre Lighting Workshop's Example Plans and Patch Sheets", organization_name: "", pdf_url: nil, website_url: "https://www.theatrelightingworkshops.com/lighting-plans/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "Here is a great resource of examples for how to create lighting plans and patch sheets", logo: "", free_tier: false, address_id: address.id})
 
 address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
-Resource.create!({ document_name: nil, organization_name: "A History of Light and Lighting", pdf_url: nil, website_url: "https://billwilliams.ca/resources/history/hol.htm", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "A history of light and lighting from 4.5 Billion BC to the 1990s", logo: "", free_tier: false, address_id: address.id})
+Resource.create!({ document_name: "A History of Light and Lighting", organization_name: "", pdf_url: nil, website_url: "https://billwilliams.ca/resources/history/hol.htm", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "A history of light and lighting from 4.5 Billion BC to the 1990s", logo: "", free_tier: false, address_id: address.id})
 
 address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
 Resource.create!({ document_name: nil, organization_name: "Color Lab", pdf_url: nil, website_url: "https://scenicandlighting.com/colorlab/", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "This is a browser-based lighting lab. It is a great way to examine how color mixes both on actors and on the floor from three directions.", logo: "", free_tier: false, address_id: address.id})
@@ -598,5 +598,114 @@ Resource.create!({ document_name: nil, organization_name: "The Lighting Archive"
 
 
 address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
-Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Lights", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+Resource.create!({ document_name: "Practicum of Stage Props", organization_name: "", pdf_url: nil, website_url: "https://human.libretexts.org/Bookshelves/Theater_and_Film/Technical_Theatre_Practicum_(Boltz)/01%3A_Chapters/1.06%3A_Stage_Properties", primary_type: "Production Staff Resources", secondary_type: "Props", tertiary_type: nil, description: "Explore Chirstopher Boltz's technical handbook section covering categories, lists and acquisition of props for productions.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Glossary of Technical Theatre Terms – Props", organization_name: "Theatrecrafts.com", pdf_url: nil, website_url: "https://www.theatrecrafts.com/pages/home/topics/props-and-masks/glossary-of-technical-theatre-terms/", primary_type: "Production Staff Resources", secondary_type: "Props", tertiary_type: nil, description: "Glossary of roughly 60 technical theatre terms relating to props from Theatrecrafts.com", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Props Master List Template", organization_name: "", pdf_url: "https://docs.google.com/document/d/1eb4x34ayxCV2nWb4JuoeE7qYrsMA9ZNj_Qe4G07SVMQ/edit", website_url: "", primary_type: "Production Staff Resources", secondary_type: "Props", tertiary_type: nil, description: "Here is a downloadable template for a props master list that you can fill out and customize!", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Propcart.com", pdf_url: nil, website_url: "https://propcart.com/", primary_type: "Production Staff Resources", secondary_type: "Props", tertiary_type: nil, description: "Propcart streamlines the process of renting props and set dressing for the entertainment industry. They connect local prop houses, cleared art galleries, and fabricators with set decorators and prop masters for TV, film, theater, and commercials. **Please Note: They do not currently rent from Prop Houses in Chicago", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Instructables.com", pdf_url: nil, website_url: "https://www.instructables.com/", primary_type: "Production Staff Resources", secondary_type: "Props", tertiary_type: nil, description: "A highly active and diverse community. Users post their how-tos on any manner of DIY projects. If you’re interested in finding tutorials for new techniques, or seeing how other people build things, this is a great place to start", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Arch Daily", pdf_url: nil, website_url: "https://www.archdaily.com/?ad_name=small-logo", primary_type: "Production Staff Resources", secondary_type: "Set", tertiary_type: nil, description: "What started as a platform to collect the most important information to help architects create better architecture, became a fast growing technology company that delivers inspiration, tools and knowledge.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Apartment Therapy", pdf_url: nil, website_url: "https://www.apartmenttherapy.com/", primary_type: "Production Staff Resources", secondary_type: "Set", tertiary_type: nil, description: "Apartment Therapy has become a leading source of design inspiration and tips for real people looking for real-life decor solutions through a fascinating look into how people from around the country live at home.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Rose Brand", pdf_url: nil, website_url: "https://www.rosebrand.com/default.aspx", primary_type: "Production Staff Resources", secondary_type: "Set", tertiary_type: nil, description: "This company is a major supplier of fabrics and materials for the entertainment industry", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Sketch Up", pdf_url: nil, website_url: "https://www.sketchup.com/", primary_type: "Production Staff Resources", secondary_type: "Set", tertiary_type: nil, description: "Although primarily a 3D design tool, it also works very well in 2D and is very easy to learn. You can download the free version of SketchUp (PC and Mac) directly from their site.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Vector Works", pdf_url: nil, website_url: "https://www.vectorworks.net/en-US", primary_type: "Production Staff Resources", secondary_type: "Set", tertiary_type: nil, description: "another widely-used design and drafting program which has become very popular in the entertainment industry. The company offers several versions, including one for lighting design.", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Purple Planet", pdf_url: nil, website_url: "https://www.purple-planet.com/", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "Purple Planet Music is a collection of music written and performed by Chris Martyn and Geoff Harvey. You are welcome to use the pieces for free. They simply ask you credit them.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "The Starving Theater Artist", pdf_url: nil, website_url: "https://brian-the-techie.blogspot.com/p/theatrical-sound-design.html", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "Tricks of the trade, discussion of design principles, and musings and rants about theater from a working theater technician/designer.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Sound Bible", pdf_url: nil, website_url: "https://soundbible.com/", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "SoundBible.com offers free sound clips for download in either wav or mp3 format", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Audacity", pdf_url: nil, website_url: "https://www.audacityteam.org/", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. Audacity is free, open source software.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Understanding and designing theatre sound PDF", organization_name: "", pdf_url: "https://filestore.aqa.org.uk/resources/drama/AQA-7262-SOUND-D-TG.PDF", website_url: "", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "Outstanding resource for drama and theatre teachers – a comprehensive teaching guide for sound design", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Orangefreesounds.com", pdf_url: nil, website_url: "https://orangefreesounds.com/", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "Oodles and oodles of free sound effects in dozens of different categories from Orange Free Sounds", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Glossary of Technical Theatre Terms – Sound", organization_name: "", pdf_url: nil, website_url: "https://www.theatrecrafts.com/pages/home/topics/sound/glossary/", primary_type: "Production Staff Resources", secondary_type: "Sound", tertiary_type: nil, description: "Comprehensive glossary of technical theatre terms for sound with hundreds of terms defined.", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Director's Blog: 10 Problems of a Theatre Director", organization_name: "", pdf_url: nil, website_url: "https://artzcentre.co.uk/directors-blog/10-problems-of-a-theatre-director/", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "Article outlining ten common problems likely to face most theatre directors.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Glossary of Technical Theatre Terms – Directing", organization_name: "", pdf_url: nil, website_url: "https://www.theatrecrafts.com/pages/home/topics/stage-management/glossary-directing/", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "A comprehensive glossary of theatre directing terms.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "List of Director Rehearsal Questions", organization_name: "", pdf_url: "https://www.code.on.ca/files/assets/resources/303-grade-12-drama-production-focus-course-profile/documents/add4m-dramaproduction-blm13directorsquestions.pdf", website_url: "", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "Useful student resources outlining the types of questions a director must ask during the rehearsal process.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "The Inside Guide to Directing from The Old Vic", organization_name: "", pdf_url: "https://cdn.oldvictheatre.com/uploads/2020/05/Inside-Guide-to-Directing.pdf", website_url: "", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "The Inside Guide to Directing produced by The Old Vic Theatre in London is a great resource for students and includes director profiles, tips, pre-rehearsal process, rehearsal process etc.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Stage Directors and Choreographers Society (SDC)", pdf_url: nil, website_url: "https://sdcweb.org/", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "The theatrical union that unites, empowers, and protects professional Stage Directors and Choreographers throughout the United States.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Director's Haven", pdf_url: nil, website_url: "https://havenchi.org/directors-haven", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "The Director’s Haven gives directors in the earliest stages of their professional careers a rare opportunity to take risks, hone their crafts and talents and share their vision through a fully staged production of a short play. Giving directors support to produce during their formative years, which includes a full design team, budget, marketing support and more, allows these artists to create quality work as well as provides a platform to further their artistic visibility through the creation of said work.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: "Advice for First-Time Directors", organization_name: "", pdf_url: nil, website_url: "https://dramatics.org/less-is-more/", primary_type: "Production Staff Resources", secondary_type: "Directing", tertiary_type: nil, description: "Check out Dramatics Magazine's article for advice for first-time directors.", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "", pdf_url: nil, website_url: "", primary_type: "Production Staff Resources", secondary_type: "Dramaturgy", tertiary_type: nil, description: "", logo: "", free_tier: false, address_id: address.id})
+
+
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Dramatists Guild", pdf_url: nil, website_url: "https://www.dramatistsguild.com/", primary_type: "Production Staff Resources", secondary_type: "Playwriting", tertiary_type: nil, description: "The Dramatists Guild is committed to shepherding playwrights, composers, lyricists, and librettists through every stage of their careers by providing community, advocacy, contract reviews and professional development to aspiring and professional dramatists working in the United States.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Play Submission Helper", pdf_url: nil, website_url: "https://playsubmissionshelper.com/?submissioncalendar", primary_type: "Production Staff Resources", secondary_type: "Playwriting", tertiary_type: nil, description: "Explore Play Submission Helper's “master list” of play submission opportunities.", logo: "", free_tier: false, address_id: address.id})
+
+address = Address.create!(address1: "", address2: nil, city: "", state: "", postal_code: "")
+Resource.create!({ document_name: nil, organization_name: "Playwright's Center", pdf_url: nil, website_url: "https://www.pwcenter.org/", primary_type: "Production Staff Resources", secondary_type: "Playwriting", tertiary_type: nil, description: "As a Playwrights’ Center member, you’ll join 2,500+ other playwrights worldwide, of all styles and experience levels. Benefits include exclusive access to our playwriting opportunities database, regular articles from experts, classes and seminars, one-on-one dramaturgy sessions, staged readings, and ways to connect with other playwrights.", logo: "", free_tier: false, address_id: address.id})
 
