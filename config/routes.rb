@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   }
 
   # post "/sessions" => "sessions#create"
+  get "/addresses" => "addresses#add_lat_lng"
   get "/theaters" => "theaters#index"
   get "/auditions" => "auditions#index"
   get "/profile" => "profiles#show"
