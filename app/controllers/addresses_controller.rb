@@ -2,12 +2,17 @@ class AddressesController < ApplicationController
   def add_lat_lng
     addresses = Address.all
     addresses.update_all(country: "US")
+    addresses.update_all(lat: nil, lng: nil)
     addresses.each do |address|
       if !address.lat
-        pp address.id
         address_string = ""
+        
+        if address.address1
+          address_string = address.address1
+        end
+
         if address.address2
-          address_string = address.address2
+          address_string = address_string + " " + address.address2
         end
     
         if address.city
