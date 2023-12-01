@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   }
 
   # post "/sessions" => "sessions#create"
+  get "/addresses" => "addresses#add_lat_lng"
   get "/theaters" => "theaters#index"
   get "/auditions" => "auditions#index"
   get "/profile" => "profiles#show"
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   get "/talent-categories" => "talents#categories"
   get "/current_user" => "users#show"
   patch "/current_user" => "users#update"
+  post "/notify-me" => "users#notify_me"
   
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]

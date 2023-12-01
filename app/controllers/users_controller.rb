@@ -38,4 +38,8 @@ class UsersController < ApplicationController
       render json: {errors: user.errors.full_messages}, status: 422
     end
   end
+
+  def notify_me
+    NotifyMeMailer.with(email: params[:email]).notify_message.deliver_now
+  end
 end
