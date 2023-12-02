@@ -6,10 +6,13 @@ class Users::SessionsController < Devise::SessionsController
   def create
     if @user.valid_password?(sign_in_params[:password])
       sign_in "user", @user
+      profile = Profile.find_by(user_id: @user.id)
+      url = profile && profile.headshot_url ? profile.headshot_url : nil;
       user = {
         first_name: @user.first_name, 
         last_name: @user.last_name,
         email: @user.email,
+        headshot_url: url,
         generated_at: DateTime.now
       }
       render json: {
