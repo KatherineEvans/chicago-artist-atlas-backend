@@ -1,0 +1,2 @@
+class UserGender < ApplicationRecord
+end

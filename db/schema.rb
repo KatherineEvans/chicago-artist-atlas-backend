@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_13_215822) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_10_232237) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,6 +26,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_215822) do
     t.datetime "updated_at", null: false
     t.string "lng"
     t.string "lat"
+  end
+
+  create_table "age_groups", force: :cascade do |t|
+    t.string "range"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "agencies", force: :cascade do |t|
@@ -107,6 +113,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_215822) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "ethnicities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "genders", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "performances", force: :cascade do |t|
     t.integer "user_id"
     t.string "title"
@@ -168,20 +186,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_215822) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "talent_categories", force: :cascade do |t|
+  create_table "talents", force: :cascade do |t|
     t.string "name"
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "talents", force: :cascade do |t|
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "talent_category_id"
-    t.string "level"
-    t.string "other"
+    t.string "type"
   end
 
   create_table "theaters", force: :cascade do |t|
@@ -222,6 +232,30 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_215822) do
     t.integer "year"
   end
 
+  create_table "user_age_groups", force: :cascade do |t|
+    t.integer "age_group_id"
+    t.integer "user_id"
+    t.integer "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_ethnicities", force: :cascade do |t|
+    t.integer "ethnicity_id"
+    t.integer "user_id"
+    t.integer "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_genders", force: :cascade do |t|
+    t.integer "gender_id"
+    t.integer "user_id"
+    t.integer "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "user_roles", force: :cascade do |t|
     t.integer "user_id"
     t.integer "character_id"
@@ -232,6 +266,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_215822) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "deleted_at"
+  end
+
+  create_table "user_talents", force: :cascade do |t|
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "talent_category_id"
+    t.string "level"
+    t.string "other"
   end
 
   create_table "users", force: :cascade do |t|

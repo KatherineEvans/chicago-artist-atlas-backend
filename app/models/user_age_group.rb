@@ -1,0 +1,2 @@
+class UserAgeGroup < ApplicationRecord
+end
