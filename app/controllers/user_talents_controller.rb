@@ -1,8 +1,8 @@
-class TalentsController < ApplicationController
+class UserTalentsController < ApplicationController
   
   def index
-    talents = current_user.talents
-    render json: talents, methods: [:talent_category]
+    user_talents = current_user.user_talents
+    render json: user_talents, methods: [:talent]
   end
 
   def categories

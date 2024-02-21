@@ -1,4 +1,3 @@
 class Talent < ApplicationRecord
-  belongs_to :talent_category
-  belongs_to :user
+  has_many :user_talents
 end

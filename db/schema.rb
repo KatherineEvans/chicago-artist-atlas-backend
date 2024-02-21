@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_10_232237) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_21_190049) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -167,6 +167,12 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_10_232237) do
     t.string "age_high"
     t.string "other_gender"
     t.string "other_pronouns"
+    t.string "other_ethnicities"
+    t.string "tech_manager"
+    t.string "tech_agent"
+    t.string "acting_reel_url"
+    t.string "portfolio_url"
+    t.string "tech_website"
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
@@ -191,7 +197,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_10_232237) do
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "type"
+    t.string "talent_type"
   end
 
   create_table "theaters", force: :cascade do |t|
@@ -272,7 +278,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_10_232237) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "talent_category_id"
+    t.integer "talent_id"
     t.string "level"
     t.string "other"
   end
