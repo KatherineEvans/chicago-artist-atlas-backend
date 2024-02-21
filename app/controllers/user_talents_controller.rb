@@ -5,47 +5,32 @@ class UserTalentsController < ApplicationController
     render json: user_talents, methods: [:talent]
   end
 
-  def categories
-    talent_categories = TalentCategory.all
-
-    sorted_categories = {}
-    talent_categories.each do |tc|
-      if sorted_categories[tc.category]
-        sorted_categories[tc.category] << tc
-      else
-        sorted_categories[tc.category] = [tc]
-      end
-    end
-
-    render json: sorted_categories.as_json
-  end
-
   def create
-    current_user.talents.destroy_all
+    current_user.user_talents.destroy_all
     
     if params[:talents]
       params[:talents].each do |key, _value|
-        talent = Talent.create(
+        talent = UserTalent.create(
           user_id: current_user.id,
-          talent_category_id: key
+          talent_id: key
         )
       end
     end
     
     if params[:other]
       params[:other].each do |key, value|
-        category = TalentCategory.find_by(category: key, name: "Other")
+        category = Talent.find_by(category: key, name: "Other", talent_type: nil)
         value.each do |val|
-          talent = Talent.create(
+          talent = UserTalent.create(
             user_id: current_user.id,
-            talent_category_id: category.id,
+            talent_id: category.id,
             other: val
           )
         end
       end
     end
     
-    render json: {message: "You did it!"}
+    render json: {message: "Success"}
     
   end
 

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "/auditions" => "auditions#index"
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
-  get "/talent-categories" => "talents#categories"
+  get "/talent-categories" => "talents#sorted_talents"
   get "/current_user" => "users#show"
   patch "/current_user" => "users#update"
   post "/notify-me" => "users#notify_me"
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]
   resources :profiles, :except => [:new, :edit, :index, :destroy]
-  resources :talents, :except => [:new, :edit, :show]
+  resources :user_talents, :except => [:new, :edit, :show]
   resources :trainings, :except => [:new, :edit, :show]
   resources :user_roles, :except => [:new, :edit, :show]
 
