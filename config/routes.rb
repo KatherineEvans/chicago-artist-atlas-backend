@@ -12,9 +12,11 @@ Rails.application.routes.draw do
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
   get "/talent-categories" => "talents#sorted_talents"
+  get "/tech-talents" => "talents#sorted_tech_talents"
   get "/current_user" => "users#show"
   patch "/current_user" => "users#update"
   post "/notify-me" => "users#notify_me"
+  get "/profile_elements" => "profiles#profile_elements"
   
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]

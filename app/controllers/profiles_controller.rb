@@ -7,10 +7,16 @@ class ProfilesController < ApplicationController
 
   def create
     image_url = params[:image_file]
+    resume_url = nil
 
     if params[:image_upload] && params[:image_upload] != "null"
       response = Cloudinary::Uploader.upload(params["image_upload"], resource_type: :auto)
       image_url = response["secure_url"]
+    end
+
+    if params[:resume_upload] && params[:resume_upload] != "null"
+      response = Cloudinary::Uploader.upload(params["resume_upload"], resource_type: :auto)
+      resume_url = response["secure_url"]
     end
 
     profile = Profile.create(
@@ -18,9 +24,7 @@ class ProfilesController < ApplicationController
       age_low: params[:age_low],
       age_high: params[:age_high],
       union_status: params[:union_status],
-      ethnicity: params[:ethnicity],
       pronouns: params[:pronouns],
-      gender: params[:gender],
       height: params[:height],
       eye_color: params[:eye_color],
       hair_color: params[:hair_color],
@@ -30,11 +34,11 @@ class ProfilesController < ApplicationController
       headline: params[:headline],
       bio: params[:bio],
       other_gender: params[:other_gender],
-      other_pronouns: params[:other_pronouns]
+      other_pronouns: params[:other_pronouns],
       # vocal_range: params[:vocal_range],
       # performance_types: params[:performance_types],
       # professional_website: params[:professional_website],
-      # resume_url: params[:resume_url],
+      resume_url: resume_url,
     )
 
     if profile.valid?
@@ -48,10 +52,16 @@ class ProfilesController < ApplicationController
   def update 
 
     image_url = params[:image_file]
+    resume_url = nil
 
     if params[:image_upload] && params[:image_upload] != "null"
       response = Cloudinary::Uploader.upload(params["image_upload"], resource_type: :auto)
       image_url = response["secure_url"]
+    end
+
+    if params[:resume_upload] && params[:resume_upload] != "null"
+      response = Cloudinary::Uploader.upload(params["resume_upload"], resource_type: :auto)
+      resume_url = response["secure_url"]
     end
    
     profile = Profile.find(params[:id])
@@ -59,9 +69,7 @@ class ProfilesController < ApplicationController
       age_low: params[:age_low],
       age_high: params[:age_high],
       union_status: params[:union_status],
-      ethnicity: params[:ethnicity],
       pronouns: params[:pronouns],
-      gender: params[:gender],
       height: params[:height],
       eye_color: params[:eye_color],
       hair_color: params[:hair_color],
@@ -71,7 +79,8 @@ class ProfilesController < ApplicationController
       headline: params[:headline],
       bio: params[:bio],
       other_gender: params[:other_gender],
-      other_pronouns: params[:other_pronouns]
+      other_pronouns: params[:other_pronouns],
+      resume_url: resume_url,
     )
     if profile.valid?
       render json: profile
@@ -79,4 +88,11 @@ class ProfilesController < ApplicationController
       render json: {errors: profile.errors.full_messages}, status: 422
     end
   end
+
+  def profile_elements
+    genders = Gender.all
+    ethnicities = Ethnicity.all
+    render json: {genders: genders, ethnicities: ethnicities}
+  end
+
 end

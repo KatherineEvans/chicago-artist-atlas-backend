@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_21_190049) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_23_015244) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,12 +26,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_21_190049) do
     t.datetime "updated_at", null: false
     t.string "lng"
     t.string "lat"
-  end
-
-  create_table "age_groups", force: :cascade do |t|
-    t.string "range"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "agencies", force: :cascade do |t|
@@ -145,9 +139,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_21_190049) do
   create_table "profiles", force: :cascade do |t|
     t.integer "user_id"
     t.string "union_status"
-    t.string "ethnicity"
     t.string "pronouns"
-    t.string "gender"
     t.string "height"
     t.string "eye_color"
     t.string "hair_color"
@@ -236,14 +228,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_21_190049) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "year"
-  end
-
-  create_table "user_age_groups", force: :cascade do |t|
-    t.integer "age_group_id"
-    t.integer "user_id"
-    t.integer "profile_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "user_ethnicities", force: :cascade do |t|
