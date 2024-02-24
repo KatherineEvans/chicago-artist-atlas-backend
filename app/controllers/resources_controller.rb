@@ -4,6 +4,7 @@ class ResourcesController < ApplicationController
 
     business_sample = []
     lifehack_sample = []
+    production_sample = []
 
     if params[:primary_filter]
       resources = Resource.where(primary_type: params[:primary_filter])
@@ -13,6 +14,7 @@ class ResourcesController < ApplicationController
       resources = Resource.all
       business_sample = Resource.where(primary_type: "Business for Actors").sample(3)
       lifehack_sample = Resource.where(primary_type: "Life Hack").sample(3)
+      production_sample = Resource.where(primary_type: "Production Staff Resources").sample(3)
     end
     resources = resources.order("primary_type ASC", "secondary_type ASC")
 
@@ -30,7 +32,7 @@ class ResourcesController < ApplicationController
       end
     end
 
-    render json: {grouped: grouped_resources, business: business_sample, lifehack: lifehack_sample}
+    render json: {grouped: grouped_resources, business: business_sample, lifehack: lifehack_sample, production: production_sample}
   end
 
 end
