@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    render json: current_user, methods: [:trainings, :awards, :performances, :user_roles, :user_talents, :age_low, :age_high]
+    render json: current_user, methods: [:trainings, :awards, :performances, :user_roles, :user_talents, :user_tech_talents]
   end
 
   def update

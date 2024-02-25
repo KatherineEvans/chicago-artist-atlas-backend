@@ -46,6 +46,9 @@ class ProfilesController < ApplicationController
     )
 
     if profile.valid?
+      if(params[:tech_talents] || params[:other_tech_talents])
+        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      end
       render json: profile
     else
       render json: {errors: profile.errors.full_messages}, status: 422
@@ -102,6 +105,11 @@ class ProfilesController < ApplicationController
       union_status: params[:union_status],
     )
     if profile.valid?
+      if(params[:tech_talents] || params[:other_tech_talents])
+        pp params[:other_tech_talents];
+        pp 'FUCK YOU'
+        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      end
       render json: profile
     else
       render json: {errors: profile.errors.full_messages}, status: 422
@@ -112,6 +120,30 @@ class ProfilesController < ApplicationController
     genders = Gender.all
     ethnicities = Ethnicity.all
     render json: {genders: genders, ethnicities: ethnicities}
+  end
+  
+  def process_tech_talents()
+    current_user.user_tech_talents.destroy_all
+
+    params[:tech_talents].each do |talent|
+      if talent
+        talent = UserTechTalent.create(
+          user_id: current_user.id,
+          talent_id: talent
+        )
+      end
+    end
+  
+    params[:other_tech_talents].each do |talent|
+      category = Talent.find_by(category: key, name: "Other")
+      value.each do |val|
+        talent = UserTechTalent.create(
+          user_id: current_user.id,
+          talent_id: category.id,
+          other: val
+        )
+      end
+    end
   end
 
 end
