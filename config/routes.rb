@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "/resources" => "resources#index"
   get "/talent-categories" => "talents#sorted_talents"
   get "/tech-talents" => "talents#sorted_tech_talents"
+  post "/tech-talents" => "profiles#process_tech_talents"
   get "/current_user" => "users#show"
   patch "/current_user" => "users#update"
   post "/notify-me" => "users#notify_me"

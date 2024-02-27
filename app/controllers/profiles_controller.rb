@@ -7,7 +7,7 @@ class ProfilesController < ApplicationController
 
   def create
     image_url = params[:image_file]
-    resume_url = nil
+    resume_url = params[:resume_file]
 
     if params[:image_upload] && params[:image_upload] != "null"
       response = Cloudinary::Uploader.upload(params["image_upload"], resource_type: :auto)
@@ -16,32 +16,39 @@ class ProfilesController < ApplicationController
 
     if params[:resume_upload] && params[:resume_upload] != "null"
       response = Cloudinary::Uploader.upload(params["resume_upload"], resource_type: :auto)
-      resume_url = response["secure_url"]
+      resume_url = response["url"]
     end
 
     profile = Profile.create(
-      user_id: current_user.id,
+      acting_reel_url: params[:acting_reel_url],
       age_low: params[:age_low],
       age_high: params[:age_high],
-      union_status: params[:union_status],
-      pronouns: params[:pronouns],
-      height: params[:height],
+      agency: params[:agency],
+      bio: params[:bio],
       eye_color: params[:eye_color],
       hair_color: params[:hair_color],
-      agency: params[:agency],
-      manager: params[:manager],
-      headshot_url: image_url,
       headline: params[:headline],
-      bio: params[:bio],
+      headshot_url: image_url,
+      height: params[:height],
+      manager: params[:manager],
+      other_ethnicities: params[:other_ethnicities],
       other_gender: params[:other_gender],
       other_pronouns: params[:other_pronouns],
-      # vocal_range: params[:vocal_range],
-      # performance_types: params[:performance_types],
-      # professional_website: params[:professional_website],
+      portfolio_url: params[:portfolio_url],
+      professional_website: params[:professional_website],
+      pronouns: params[:pronouns],
       resume_url: resume_url,
+      tech_agent: params[:tech_agent],
+      tech_manager: params[:tech_manager],
+      tech_website: params[:tech_website],
+      union_status: params[:union_status],
+      user_id: current_user.id,
     )
 
     if profile.valid?
+      if(params[:tech_talents] || params[:other_tech_talents])
+        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      end
       render json: profile
     else
       render json: {errors: profile.errors.full_messages}, status: 422
@@ -52,37 +59,57 @@ class ProfilesController < ApplicationController
   def update 
 
     image_url = params[:image_file]
-    resume_url = nil
+    resume_url = params[:resume_url]
 
     if params[:image_upload] && params[:image_upload] != "null"
-      response = Cloudinary::Uploader.upload(params["image_upload"], resource_type: :auto)
-      image_url = response["secure_url"]
+      begin
+        response = Cloudinary::Uploader.upload(params[:image_upload], resource_type: :auto)
+        image_url = response["secure_url"]
+      rescue => e
+        render json: {errors: e}, status: 422
+      end
     end
 
     if params[:resume_upload] && params[:resume_upload] != "null"
-      response = Cloudinary::Uploader.upload(params["resume_upload"], resource_type: :auto)
-      resume_url = response["secure_url"]
+      begin
+        response = Cloudinary::Uploader.upload(params[:resume_upload], resource_type: :auto)
+        resume_url = response["url"]
+      rescue => e
+        render json: {errors: e}, status: 422
+      end
     end
-   
+
     profile = Profile.find(params[:id])
     profile.update(
+      acting_reel_url: params[:acting_reel_url],
       age_low: params[:age_low],
       age_high: params[:age_high],
-      union_status: params[:union_status],
-      pronouns: params[:pronouns],
-      height: params[:height],
+      agency: params[:agency],
+      bio: params[:bio],
       eye_color: params[:eye_color],
       hair_color: params[:hair_color],
-      agency: params[:agency],
-      manager: params[:manager],
-      headshot_url: image_url,
       headline: params[:headline],
-      bio: params[:bio],
+      headshot_url: image_url,
+      height: params[:height],
+      manager: params[:manager],
+      other_ethnicities: params[:other_ethnicities],
       other_gender: params[:other_gender],
       other_pronouns: params[:other_pronouns],
+      portfolio_url: params[:portfolio_url],
+      professional_website: params[:professional_website],
+      pronouns: params[:pronouns],
       resume_url: resume_url,
+      tech_agent: params[:tech_agent],
+      tech_manager: params[:tech_manager],
+      tech_website: params[:tech_website],
+      union_status: params[:union_status],
     )
     if profile.valid?
+      if(params[:tech_talents] || params[:other_tech_talents])
+        pp params[:other_tech_talents];
+        pp 'FUCK YOU'
+        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      end
       render json: profile
     else
       render json: {errors: profile.errors.full_messages}, status: 422
@@ -93,6 +120,30 @@ class ProfilesController < ApplicationController
     genders = Gender.all
     ethnicities = Ethnicity.all
     render json: {genders: genders, ethnicities: ethnicities}
+  end
+  
+  def process_tech_talents()
+    current_user.user_tech_talents.destroy_all
+
+    params[:tech_talents].each do |talent|
+      if talent
+        talent = UserTechTalent.create(
+          user_id: current_user.id,
+          talent_id: talent
+        )
+      end
+    end
+  
+    params[:other_tech_talents].each do |talent|
+      category = Talent.find_by(category: key, name: "Other")
+      value.each do |val|
+        talent = UserTechTalent.create(
+          user_id: current_user.id,
+          talent_id: category.id,
+          other: val
+        )
+      end
+    end
   end
 
 end
