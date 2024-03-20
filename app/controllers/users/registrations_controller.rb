@@ -12,11 +12,46 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
     def respond_with(resource, _opts = {})
       if request.method == "POST" && resource.persisted?
+
+        begin
+          result = ChargeBee::Customer.create({
+              :first_name => resource[:first_name],
+              :last_name => resource[:last_name],
+              :email => resource[:email],
+          })
+          customer = result.customer
+
+          begin
+            result = ChargeBee::Subscription.create_with_items(customer.id, {
+              :subscription_items => [
+                {
+                  :item_price_id => "General-Artist-Membership-USD-Monthly",
+                  :unit_price => 0
+                }
+              ]
+            })
+            subscription = result.subscription
+
+            user = User.find(resource.id)
+
+            user.update(
+              chargebee_customer_id: customer.id,
+              chargebee_subscription_id: subscription.id,
+            )
+            pp user
+          rescue
+            # render json: {}
+          end
+        rescue
+          # render json: {}
+        end
+
         UserMailer.with(user: resource).welcome_message.deliver_now
 
         render json: {
-          status: {code: 200, message: "Signed up sucessfully."},
+          status: {code: 200, message: "Signed up sucessfully.", url: result.hosted_page.to_s},
         }, status: :ok
+
       elsif request.method == "DELETE"
         render json: {
           status: { code: 200, message: "Account deleted successfully."}
