@@ -17,6 +17,8 @@ class User < ApplicationRecord
   has_many :user_talents
   has_many :user_tech_talents
   has_many :talents, through: :user_talents
+  has_many :user_ethnicities
+  has_many :user_genders
   belongs_to :address, optional: true
   # belongs_to :company, optional: true
 end

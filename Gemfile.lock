@@ -78,6 +78,11 @@ GEM
     builder (3.2.4)
     case_transform (0.2)
       activesupport
+    cgi (0.4.1)
+    chargebee (2.8.6)
+      cgi (> 0)
+      json_pure (~> 2.1)
+      rest-client (>= 1.8, < 3.0)
     cloudinary (1.23.0)
       aws_cf_signer
       rest-client (>= 2.0.0)
@@ -126,6 +131,7 @@ GEM
     irb (1.8.0)
       rdoc (~> 6.5)
       reline (>= 0.3.6)
+    json_pure (2.7.1)
     jsonapi-renderer (0.2.2)
     jwt (2.7.1)
     loofah (2.21.3)
@@ -293,6 +299,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   bcrypt (~> 3.1.7)
   bootsnap
+  chargebee (~> 2)
   cloudinary
   debug
   devise
