@@ -26,4 +26,7 @@ Rails.application.routes.draw do
   resources :trainings, :except => [:new, :edit, :show]
   resources :user_roles, :except => [:new, :edit, :show]
 
+  # routes.rb
+  post "/generate_checkout_new_url" => "chargebee#checkout_new"
+
 end

@@ -5,27 +5,29 @@ class UsersController < ApplicationController
 
   def update
     user = current_user
+
     user.update(
-      first_name: params[:first_name],
-      last_name: params[:last_name]
+      first_name: params[:user][:first_name],
+      last_name: params[:user][:last_name]
     )
 
     if user.valid?
       if user.address_id
         address = Address.find(user.address_id)
-        address.update(address1: params[:street_address],
-          city: params[:city],
-          state: params[:region], 
-          country: params[:country], 
-          postal_code: params[:postal_code]
+        address.update(
+          address1: params[:address][:street],
+          city: params[:address][:city],
+          state: params[:address][:state],
+          country: params[:address][:country],
+          postal_code: params[:address][:postal_code]
         )
       else
         address = Address.create(
-          address1: params[:street_address],
-          city: params[:city],
-          state: params[:region], 
-          country: params[:country], 
-          postal_code: params[:postal_code]
+          address1: params[:address][:street],
+          city: params[:address][:city],
+          state: params[:address][:state],
+          country: params[:address][:country],
+          postal_code: params[:address][:postal_code]
         )
       end
       if address.valid?
