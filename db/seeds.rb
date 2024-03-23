@@ -443,7 +443,7 @@ wpt = Agency.create!(name: "Stewart Talent", address_id: address.id, website: "h
 
 # RESOURCES
 
-BIPOC
+# BIPOC
 Resource.create!({ document_name: nil, organization_name: "Arts Adminstrators of Color", pdf_url: nil, website_url: "https://www.aacnetwork.org/", primary_type: "Identity Based", secondary_type: "BIPOC", description: "Founded in July 2016, the Arts Administrators of Color Network (AAC) is a service organization that focuses on networking and community building through the arts. We are advocates who continue to fight for equity in the arts through collaborations, forums, and outlets that provide a voice for arts administrators and artists of color where there may not be one.", logo: "https://res.cloudinary.com/dzlaaytu7/image/upload/v1686705740/Identity%20Based%20Resources/BIPOC/AAC_ozw4ap.jpg", free_tier: true})
 
 Resource.create!({ document_name: nil, organization_name: "BIPOC Leadership Circle", pdf_url: nil, website_url: "https://www.artequity.org/bipoc-leadership-circle", primary_type: "Identity Based", secondary_type: "BIPOC", description: "The BIPOC Leadership Circle is designed to center, support, and address experiences of BIPOC leaders of cultural institutions.", logo: "https://res.cloudinary.com/dzlaaytu7/image/upload/v1686705740/Identity%20Based%20Resources/BIPOC/BLC_qtcmzb.png", free_tier: true})
