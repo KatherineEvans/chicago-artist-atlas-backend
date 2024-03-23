@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_20_180448) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_22_200411) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -80,6 +80,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_20_180448) do
     t.integer "callback_address_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "how_to_submit_link"
   end
 
   create_table "awards", force: :cascade do |t|
