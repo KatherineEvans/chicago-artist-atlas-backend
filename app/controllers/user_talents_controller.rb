@@ -5,6 +5,11 @@ class UserTalentsController < ApplicationController
     render json: user_talents, methods: [:talent]
   end
 
+  def tech_talents
+    user_tech_talents = current_user.user_tech_talents
+    render json: user_tech_talents, methods: [:talent]
+  end
+
   def create
     current_user.user_talents.destroy_all
     
