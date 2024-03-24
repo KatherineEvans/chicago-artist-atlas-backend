@@ -26,7 +26,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
               :subscription_items => [
                 {
                   :item_price_id => "General-Artist-Membership-USD-Monthly",
-                  :unit_price => 0
                 }
               ]
             })
