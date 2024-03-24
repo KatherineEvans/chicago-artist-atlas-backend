@@ -52,10 +52,7 @@ class UserRolesController < ApplicationController
   def update
     @user_role = UserRole.find(params[:id])
     @user_role.update(
-      user_id: current_user.id,
-      character_id: params[:character_id],
       submitted: params[:submitted],
-      submitted_date: params[:submitted_date],
       invited_to_callbacks: params[:invited_to_callbacks],
       cast_in_show: params[:cast_in_show]
     )
