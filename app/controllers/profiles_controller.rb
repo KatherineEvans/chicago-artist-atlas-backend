@@ -62,9 +62,9 @@ class ProfilesController < ApplicationController
 
     if profile.valid?
       # Process TECH TALENTS
-      if(params[:tech_talents] || params[:other_tech_talents])
-        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
-      end
+      # if(params[:tech_talents] || params[:other_tech_talents])
+      #   process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      # end
 
       # Process GENDERS & ETHNICITIES
       results = handle_genders_ethnicities(params[:checked_ethnicities], params[:checked_genders], profile)
@@ -133,9 +133,9 @@ class ProfilesController < ApplicationController
       union_status: params[:union_status],
     )
     if profile.valid?
-      if params[:tech_talents] || params[:other_tech_talents]
-        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
-      end
+      # if params[:tech_talents] || params[:other_tech_talents]
+      #   process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      # end
 
       results = handle_genders_ethnicities(params[:checked_ethnicities], params[:checked_genders], profile)
 
