@@ -1,8 +1,11 @@
 class NotifyMeMailer < ApplicationMailer
-
   def notify_message
+    @name = params[:name]
     @email = params[:email]
-    mail(to: Rails.application.credentials.gmail[:email], subject: "Please notify me of Atlas's Launch!", from: @email)
-  end
+    @phone = params[:phone]
+    @subject = params[:subject]
+    @message = params[:message]
 
+    mail(to: Rails.application.credentials.gmail[:email], subject: @subject, from: @email)
+  end
 end

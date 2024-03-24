@@ -42,6 +42,6 @@ class UsersController < ApplicationController
   end
 
   def notify_me
-    NotifyMeMailer.with(email: params[:email]).notify_message.deliver_now
+    NotifyMeMailer.with(name: params[:name], email: params[:email], phone: params[:phone], subject: params[:subject], message: params[:message]).notify_message.deliver_now
   end
 end
