@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   patch "/current_user" => "users#update"
   post "/notify-me" => "users#notify_me"
   get "/profile_elements" => "profiles#profile_elements"
+  get "/user_tech_talents" => "user_talents#tech_talents"
   
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]

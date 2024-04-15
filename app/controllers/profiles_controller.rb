@@ -11,6 +11,7 @@ class ProfilesController < ApplicationController
     image_errors = false
     resume_errors = false
 
+    # HEADSHOT UPLOAD
     if params[:image_upload] && params[:image_upload] != "null"
       begin
         response = Cloudinary::Uploader.upload(params[:image_upload], resource_type: :auto)
@@ -21,6 +22,7 @@ class ProfilesController < ApplicationController
       end
     end
 
+    # RESUME UPLOAD
     if params[:resume_upload] && params[:resume_upload] != "null"
       begin
         response = Cloudinary::Uploader.upload(params[:resume_upload], resource_type: :auto)
@@ -31,6 +33,7 @@ class ProfilesController < ApplicationController
       end
     end
 
+    # CREATE PROFILE
     profile = Profile.create(
       acting_reel_url: params[:acting_reel_url],
       age_low: params[:age_low],
@@ -58,10 +61,12 @@ class ProfilesController < ApplicationController
     )
 
     if profile.valid?
-      if(params[:tech_talents] || params[:other_tech_talents])
-        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
-      end
+      # Process TECH TALENTS
+      # if(params[:tech_talents] || params[:other_tech_talents])
+      #   process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      # end
 
+      # Process GENDERS & ETHNICITIES
       results = handle_genders_ethnicities(params[:checked_ethnicities], params[:checked_genders], profile)
 
       if results.length > 0 || resume_errors || image_errors
@@ -128,9 +133,9 @@ class ProfilesController < ApplicationController
       union_status: params[:union_status],
     )
     if profile.valid?
-      if params[:tech_talents] || params[:other_tech_talents]
-        process_tech_talents(params[:tech_talents], params[:other_tech_talents])
-      end
+      # if params[:tech_talents] || params[:other_tech_talents]
+      #   process_tech_talents(params[:tech_talents], params[:other_tech_talents])
+      # end
 
       results = handle_genders_ethnicities(params[:checked_ethnicities], params[:checked_genders], profile)
 

@@ -26,7 +26,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
               :subscription_items => [
                 {
                   :item_price_id => "General-Artist-Membership-USD-Monthly",
-                  :unit_price => 0
                 }
               ]
             })
@@ -38,12 +37,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
               chargebee_customer_id: customer.id,
               chargebee_subscription_id: subscription.id,
             )
-            pp user
-          rescue
-            # render json: {}
+
+          rescue => e
+            Rails.logger.error "An error occurred creating a subscription: #{e.message}"
           end
-        rescue
-          # render json: {}
+        rescue => e
+          Rails.logger.error "An error occurred creating a customer: #{e.message}"
         end
 
         UserMailer.with(user: resource).welcome_message.deliver_now
