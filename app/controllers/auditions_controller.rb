@@ -1,7 +1,13 @@
 class AuditionsController < ApplicationController
   def index
-    auditions = Audition.all
+    auditions = Audition.where(
+      "(audition_date1 >= :today OR audition_date1 IS NULL) AND
+       (audition_date2 >= :today OR audition_date2 IS NULL) AND
+       (audition_date3 >= :today OR audition_date3 IS NULL) AND
+       (audition_date4 >= :today OR audition_date4 IS NULL) AND
+       (audition_date5 >= :today OR audition_date5 IS NULL)",
+      { today: Date.current }
+    )
     render json: auditions
   end
-  
 end
