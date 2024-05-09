@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/addresses" => "addresses#add_lat_lng"
   get "/theaters" => "theaters#index"
   get "/auditions" => "auditions#index"
+  get "/auditions/:id" => "auditions#show"
   get "/profile" => "profiles#show"
   get "/resources" => "resources#index"
   get "/talent-categories" => "talents#sorted_talents"
