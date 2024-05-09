@@ -10,4 +10,8 @@ class AuditionsController < ApplicationController
     )
     render json: auditions
   end
+
+  def show
+    render json: Audition.find(params[:id]),  methods: [:characters, :show_address, :callback_address, :audition_address]
+  end
 end
