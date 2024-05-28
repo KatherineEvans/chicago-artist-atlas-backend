@@ -4,4 +4,9 @@ class TheatersController < ApplicationController
     theaters = Theater.all
     render json: theaters
   end
+
+  def show
+    theater = Theater.find(params[:id])
+    render json: theater
+  end
 end

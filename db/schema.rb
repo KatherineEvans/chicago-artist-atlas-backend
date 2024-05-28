@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_22_200411) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_27_192519) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -303,6 +303,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_22_200411) do
     t.string "chargebee_subscription_id"
     t.boolean "admin", default: false
     t.integer "subscription_level", default: 1
+    t.integer "theater_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["jti"], name: "index_users_on_jti", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

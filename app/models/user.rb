@@ -20,5 +20,5 @@ class User < ApplicationRecord
   has_many :user_ethnicities
   has_many :user_genders
   belongs_to :address, optional: true
-  # belongs_to :company, optional: true
+  belongs_to :theater, optional: true
 end

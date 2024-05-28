@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # post "/sessions" => "sessions#create"
   get "/addresses" => "addresses#add_lat_lng"
   get "/theaters" => "theaters#index"
+  get "/theaters/:id" => "theaters#show"
   get "/auditions" => "auditions#index"
   get "/auditions/:id" => "auditions#show"
   get "/profile" => "profiles#show"
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
   post "/notify-me" => "users#notify_me"
   get "/profile_elements" => "profiles#profile_elements"
   get "/user_tech_talents" => "user_talents#tech_talents"
+  get "/performers" => "performers#index"
   
   resources :awards, :except => [:new, :edit, :show]
   resources :performances, :except => [:new, :edit, :show]
