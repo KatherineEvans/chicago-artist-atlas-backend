@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_27_192519) do
+ActiveRecord::Schema[7.0].define(version: 2024_06_12_205637) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -217,6 +217,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_27_192519) do
     t.string "typical_rehearsal_time"
     t.string "typical_audition_time"
     t.integer "owner_id"
+    t.string "music_director"
+    t.string "choreographer"
   end
 
   create_table "trainings", force: :cascade do |t|
